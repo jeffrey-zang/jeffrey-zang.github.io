@@ -1,16 +1,21 @@
+const darkmodeColour = '#282c34';
+
 const headingStyle = {
-  color: 'cornflowerblue',
-  backgroundColor: '#282c34'
+  color: 'white',
+  backgroundColor: darkmodeColour
 }
 
-const darkmodeColour = '#282c34';
+const heading2Style = {
+  color: 'cornflowerblue',
+  backgroundColor: darkmodeColour
+}
 
 function App() {
 
   return (
     <div className="container" style = {{backgroundColor: '#282c34'}}>
-        <h1 style ={headingStyle}> Hello, I'm Jeffrey Zang </h1>
-        <h2>Your mother</h2>
+        <h1 style = {headingStyle}> Hello, I'm Jeffrey Zang </h1>
+        <h2 style = {heading2Style}> Your mother </h2>
     </div>
   );
 }
