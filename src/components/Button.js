@@ -1,7 +1,11 @@
 const Button = ({colour, text}) => {
+    const onClick = (e) => {
+    
+    }
+  
     return (
-        <button style = {{ backgroundColor : colour}} className = 'btn'> 
-            {text}
-        </button>
+        <button onClick = {onClick} style = {{backgroundColor: colour}} className = 'btn'>text</button>
     )
 }
+
+export default Button

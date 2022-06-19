@@ -1,8 +1,12 @@
-const Header = ({ title, colour }) => {
+import Button from './Button'
+
+const Header = ({ title, colour, onClick }) => {
+
   return (
-    <div>
-        <h1 style = {{color: colour}}>{title}</h1>
-    </div>
+    <header className='header'>
+        <h1 style = {{color: colour, alignItems: 'center'}}>{title}</h1>
+        {/* <Button colour = 'steelblue' text = 'View' onClick = {onClick}/> */}
+    </header>
   )
 }
 
