@@ -8,16 +8,18 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #444a57;
 }
 
 .container {
   max-width: 500px;
   margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
+  /* overflow: auto; */
+  /* min-height: 300px auto; */
+  max-height: auto;
+  /* border: 1px solid steelblue; */
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .header {

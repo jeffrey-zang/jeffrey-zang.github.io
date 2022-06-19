@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="container" style = {{backgroundColor: '#282c34'}}>
-        <h1 style = {headingStyle}> Hello, I'm Jeffrey Zang </h1>
-        <h2 style = {heading2Style}> Your mother </h2>
+        <h1 style = {headingStyle} className='header'> Hello, I'm Jeffrey Zang </h1>
+        <h2 style = {heading2Style}> not fat </h2>
     </div>
   );
 }
