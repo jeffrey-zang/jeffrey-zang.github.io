@@ -1,4 +1,4 @@
-const Title = ( colour ) => {
+const Title = ( colour, words ) => {
     return (
         <div className='title'>
             <h1 style = {{color: 'azure', alignItems: 'center'}}>Jeffrey Zang</h1>
