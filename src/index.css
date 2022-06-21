@@ -26,8 +26,17 @@ body {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  justify-content: center;
   /* margin-bottom: 20px; */
 }
+
+.header2 {
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: center; */
+  /* margin-bottom: 20px; */
+}
+
 
 .title {
   display: flex;
@@ -38,21 +47,25 @@ body {
 }
 
 .btn {
-  display: inline-block;
   background: #000;
-  color: #fff;
-  border: none;
+  color: #ffffff;
+  border: hsl(207, 54%, 27%);
+  border-style: solid;
+  border-width: 0px;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
+  float: right;
+  justify-content: flex-end;
+  align-items: right;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   font-family: inherit;
 }
 
 .btn:focus {
-  outline: none;
+  outline: #000;
 }
 
 .btn:active {
