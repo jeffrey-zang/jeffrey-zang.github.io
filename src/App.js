@@ -56,23 +56,27 @@ function App() {
         Links
       </h1>
       <p style = {{color: 'azure', fontSize: '18px', fontWeight: 'normal'}}>
-        GitHub: <a href='https://github.com/jeffrey-zang' style={{color:'ghostwhite'}}>jeffrey-zang</a>
+        GitHub: <a href='https://github.com/jeffrey-zang' target = '_blank' style={{color:'ghostwhite'}}>jeffrey-zang</a>
         <br></br>
-        Discord: <p style={{display: 'inline', color: '#5663F7'}}>Jeff Bozos#4701</p>
+        Discord: <p style={{display: 'inline', color: '#5663F7'}} target = '_blank'>Jeff Bozos#4701</p>
         <br></br>
-        Stack Overflow: <a href='https://stackoverflow.com/users/14683783/larg-ank' style={{color:'#ef8236'}}>Larg Ank</a>
+        Stack Overflow: <a href='https://stackoverflow.com/users/14683783/larg-ank' target = '_blank' style={{color:'#ef8236'}}>Larg Ank</a>
         <br></br>
-        Replit: <a href='https://replit.com/@LargAnk' style={{color:'#878d96'}}>LargAnk</a>
+        Replit: <a href='https://replit.com/@LargAnk' target = '_blank' style={{color:'#878d96'}}>LargAnk</a>
         <br></br>
       </p>
     </div>
 
-    <div className='container' style={{ backgroundColor: darkmodeColour }}>
+    <div className='container' style={{ backgroundColor: darkmodeColour, maxWidth: '800px' }}>
       <h1 style = {{display: 'flex', color: 'cornflowerblue', justifyContent: 'center', alignItems: 'center', fontSize: '50px'}}>
         Contact
       </h1>
       <p style = {{color: 'azure', fontSize: '18px', fontWeight: 'normal'}}>
-        Email: <a href='zangj4548@wrdsb.ca' style = {{color: 'azure'}}>zangj4548@wrdsb.ca</a>
+        Email: <address style = {{display: 'inline'}}>zangj4548@wrdsb.ca</address>
+        <br></br>
+        Phone: <address style = {{display: 'inline'}}>226-988-5047</address>
+        <br></br>
+        Discord: <p style={{display: 'inline', color: '#5663F7'}}>Jeff Bozos#4701</p>
       </p>
     </div>
 
