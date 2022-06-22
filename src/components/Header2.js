@@ -1,4 +1,3 @@
-import Button from './Button'
 
 const heading2Style = {
   color: 'cornflowerblue',
@@ -7,13 +6,13 @@ const heading2Style = {
   fontSize: '50px'
 }
 
-const Header2 = ({ title, colour, onClick, text, hasbutton }) => {
+const Header2 = ({ title, colour, clicked, text, hasbutton }) => {
 
   return (
     <div>
       <h1 style = {heading2Style}>
         {title}
-        <button onclick = {onClick} style = {{backgroundColor: 'steelblue'}} className = 'btn'>
+        <button onClick = {clicked} style = {{backgroundColor: 'steelblue'}} className = 'btn'>
           {text}
         </button>
       </h1>
