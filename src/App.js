@@ -1,8 +1,12 @@
+import React from 'react';
+import root from './index';
+import ReactDOM from 'react-dom/client';
+
 import Header from './components/Header'
 import Title from './components/Title'
 // import Button from './components/Button'
 import Header2 from './components/Header2'
-
+import Portfolio from './Portfolio';
 const darkmodeColour = '#282c34';
 
 // const headingStyle = {
@@ -28,7 +32,7 @@ function App() {
     <div className="container" style={{ backgroundColor: '#282c34', maxWidth: '100%', margin:0, padding:'40px' }}>
       <Header title="Hello, I'm" colour={heading2Style.color} />
       {/* <h1 style = {headingStyle} className='header'> Hello, I'm Jeffrey Zang </h1> */}
-      <Title></Title>
+      <Title words = 'Jeffrey Zang'></Title>
       {/* <p style = {{display: 'flex', color: 'white', fontSize: '18px', justifyContent: 'center', alignItems: 'center'}}>
         I am a 
       </p> */}
@@ -36,7 +40,15 @@ function App() {
     </div>
 
     <div className='container' style={{ backgroundColor: darkmodeColour }}>
-      <Header2 title = "Portfolio" text = 'View'/>
+      <Header2 title = "Portfolio" text = 'View' clicked = {
+        () => {
+          root.render (
+            <React.StrictMode>
+              <Portfolio />
+            </React.StrictMode>
+          )          
+        }
+      }/>
       <p style = {{color: 'azure', fontSize: '18px'}}>
         My projects, creations, and experience
       </p>

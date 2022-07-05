@@ -1,7 +1,9 @@
 const Title = ( colour, words ) => {
     return (
-        <div className='title'>
-            <h1 style = {{color: 'azure', alignItems: 'center'}}>Jeffrey Zang</h1>
+        <div className='header'>
+            <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '100px'}}>
+                Jeffrey Zang
+            </h1>
         </div>
         )
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 
 const heading2Style = {
   color: 'cornflowerblue',
