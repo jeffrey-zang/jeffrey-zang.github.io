@@ -122,6 +122,13 @@ function Portfolio() {
         }
       />
     </div>
+    
+    <div className="container" style={{ backgroundColor: '#282c34', maxWidth: '100%', margin:0 }}>
+      <h2 style = {{display: 'flex', color: 'azure', justifyContent: 'center', alignItems: 'center'}}>
+        Copyright © 2022: Jeffrey Zang
+      </h2>
+    </div>
+
     </>
   );
 }
