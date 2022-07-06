@@ -55,9 +55,9 @@ function App() {
     </div>
 
     <div className='container' style={{ backgroundColor: darkmodeColour }}>
-      <Header2 title = "Resume" text = 'View' clicked={
+      <Header2 title = "Resume" text = {'View '} clicked={
         () => {window.open('https://docs.google.com/document/d/1b6urcHHJYErsZNCe6qV3wdkqDbrzLin93wucKvwnnzc/view')}
-      }/>
+      } icon = {'bi bi-justify-left'}/>
       <p style = {{color: 'azure', fontSize: '18px'}}>
         My achievements, extracurriculars, work and volunteering experience
       </p>

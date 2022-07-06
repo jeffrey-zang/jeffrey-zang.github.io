@@ -7,7 +7,7 @@ const heading2Style = {
   fontSize: '50px'
 }
 
-const Header2 = ({ title, colour, clicked, text, hasbutton }) => {
+const Header2 = ({ title, colour, clicked, text, icon }) => {
 
   return (
     <div>
@@ -15,6 +15,7 @@ const Header2 = ({ title, colour, clicked, text, hasbutton }) => {
         {title}
         <button onClick = {clicked} style = {{backgroundColor: 'steelblue'}} className = 'btn'>
           {text}
+          <i class={icon} style={{ fontSize: 22 }}></i>
         </button>
       </h1>
         {/* <Button colour = 'steelblue' text = 'View' onClick = {onClick}/> */}
