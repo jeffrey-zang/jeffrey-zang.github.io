@@ -8,6 +8,9 @@ import App from './App';
 import Button from './components/Button';
 import meletiLogo from './logos/meletipfp.png'
 import farmoutLogo from './logos/farmouticon.png'
+import galactijumplogo from './logos/galactijumplogo.png'
+import logo from './logos/logo.png'
+import policeLogo from './logos/police-car.png'
 // import Button from './components/Button'
 
 const darkmodeColour = '#282c34';
@@ -75,15 +78,20 @@ function Portfolio() {
         }>
       </Button>
       <p style = {{color: '#F1E05A', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
-        <i class={'bi bi-circle color: #F1E05A'} style={{ fontSize: 18 }}></i>
-        {'\u00A0JavaScript'}
+        <i class={'bi bi-hexagon color: #F1E05A'} style={{ fontSize: 20 }}></i>
+        {'\u00A0JavaScript, discord.js'}
+        <br></br>
+      </p>
+      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px', whiteSpace: 'nowrap'}}>
+        <i class={'bi bi-check-circle-fill color: yellow'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: complete, 50% working'}
       </p>
     </div>
     
     <div className="container" style={{ backgroundColor: '#282c34'}}>
       <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
         {'Farmout\u00A0'}
-        <img src={farmoutLogo} alt="MeletiLogo" width = '80' height = '80' style={{display: 'flex', justifyContent: "center", borderRadius: '15px'}} align = 'right'></img>
+        <img src={farmoutLogo} alt="farmoutlogo" width = '80' height = '80' style={{display: 'flex', justifyContent: "center", borderRadius: '15px'}} align = 'right'></img>
       </h1>
       <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
         Discord Bot
@@ -107,7 +115,119 @@ function Portfolio() {
         }>
       </Button>
       <p style = {{color: '#3572A5', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
-        Python 
+        <i class={'bi bi-circle color: #3572A5'} style={{ fontSize: 18 }}></i>
+        {'\u00A0Python, discord.py'} 
+      </p>
+      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-check-circle-fill color: yellow'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: complete, 50% working'}
+      </p>
+    </div>
+
+    <div className="container" style={{ backgroundColor: '#282c34'}}>
+      <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+        {'galactijump\u00A0'}
+        <img src={galactijumplogo} alt="GalactijumpLogo" width = '80' height = '80' style={{display: 'flex', justifyContent: "center", borderRadius: '15px'}} align = 'right'></img>
+      </h1>
+      <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
+        Unity3D
+      </h1>
+      <p style = {{color: 'azure', fontSize: '18px', marginTop: '10px',}}>
+        galactijump (no capital) is a low poly space game about harvesting asteroid minerals. It features a physics engine, models created by myself, and animations. The name galactijump was inspired by GalactiGolf, the winning entry of JAMHacks 6. 
+        <br></br>
+        <br></br>
+        Created by Jeffrey Zang.
+      </p>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
+        () => {window.open('https://github.com/jeffrey-zang/galactijump')}
+        }>
+      </Button>
+      <p style = {{color: '#178600', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-slash-circle color: #178600'} style={{ fontSize: 18 }}></i>
+        {'\u00A0C#, Blender, Unity3D, ShaderLab'}
+      </p>
+      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-clock-history color: yellow'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: in progress, estimated September 2022'}
+      </p>
+    </div>
+
+    <div className="container" style={{ backgroundColor: '#282c34'}}>
+      <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+        {'jeffrey-zang.github.io\u00A0'}
+      </h1>
+      <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
+        This website, developer portfolio
+      </h1>
+      <p style = {{color: 'azure', fontSize: '18px', marginTop: '10px',}}>
+        The website that you're looking at right now. It contains my developer portfolio, link to my resume, and ways to contact me.
+        <br></br>
+        <br></br>
+        Created by Jeffrey Zang.
+      </p>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
+        () => {window.open('https://github.com/jeffrey-zang/jeffrey-zang.github.io')}
+        }>
+      </Button>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Link\u00A0'} colour = 'steelblue' icon = {'bi bi-link-45deg'} clicked={
+        () => {window.open('https://jeffrey-zang.github.io/')}
+        }>
+      </Button>
+      <p style = {{color: '#F1E05A', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-hexagon color: #178600'} style={{ fontSize: 18 }}></i>
+        {'\u00A0JavaScript, HTML/CSS, React'}
+      </p>
+      <p style = {{color: 'lime', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-check-circle color: lime'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: complete, will recieve updates'}
+      </p>
+    </div>
+
+    <div className="container" style={{ backgroundColor: '#282c34'}}>
+      <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+        {'Police Pursuit\u00A0'}
+        <img src={policeLogo} alt="policelogo" width = '80' height = '80' style={{display: 'flex', justifyContent: "center", borderRadius: '15px'}} align = 'right'></img>
+      </h1>
+      <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
+        Submission for Pyweek 31
+      </h1>
+      <p style = {{color: 'azure', fontSize: '18px', marginTop: '10px',}}>
+        Police Pursuit is a simple, 2D game about escaping from a police car. You will dodge obstacles like other cars, barriers, and even bathtubs as you cruise down the highway. The music and images are sourced in the github repo.
+        <br></br><br></br>
+        How to Play:
+        <br></br>
+        <i class={'bi bi-dot'} style={{ fontSize: 18 }}></i>
+        Locate the "main.py" file and double click it.
+        <br></br>
+        <i class={'bi bi-dot'} style={{ fontSize: 18 }}></i>
+        Use WASD or arrow keys to control your car
+        <br></br>
+        <i class={'bi bi-dot'} style={{ fontSize: 18 }}></i>
+        Space to pause
+
+        <br></br>
+        <br></br>
+        Created by Jeffrey Zang and Daniel Zhang.
+      </p>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
+        () => {window.open('https://github.com/jeffrey-zang/Police-Pursuit')}
+        }>
+      </Button>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Repl\u00A0'} colour = '#1C2333' icon = {'bi bi-code'} clicked={
+        () => {window.open('https://replit.com/@DanielZhang3/Pyweek-thing-2?v=1')}
+        }>
+      </Button>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Pyweek Link\u00A0'} colour = 'steelblue' icon = {'bi bi-link-45deg'} clicked={
+        () => {window.open('https://pyweek.org/e/nah/')}
+        }>
+      </Button>
+      <p style = {{color: '#3572A5', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-circle color: #178600'} style={{ fontSize: 18 }}></i>
+        {'\u00A0Python, Pygame'}
+      </p>
+      <p style = {{color: 'lime', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+        <i class={'bi bi-check-circle color: lime'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: complete'}
       </p>
     </div>
 
