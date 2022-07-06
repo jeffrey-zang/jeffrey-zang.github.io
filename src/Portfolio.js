@@ -75,7 +75,8 @@ function Portfolio() {
         }>
       </Button>
       <p style = {{color: '#F1E05A', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
-        JavaScript
+        <i class={'bi bi-circle color: #F1E05A'} style={{ fontSize: 18 }}></i>
+        {'\u00A0JavaScript'}
       </p>
     </div>
     
