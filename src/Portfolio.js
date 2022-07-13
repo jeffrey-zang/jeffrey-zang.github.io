@@ -13,6 +13,9 @@ import logo from './logos/logo.png'
 import policeLogo from './logos/police-car.png'
 // import Button from './components/Button'
 
+import galactijump1 from './screenshots/galactijump1.png'
+import galactijump0 from './screenshots/galactijump0.png'
+
 const darkmodeColour = '#282c34';
 
 // const headingStyle = {
@@ -27,16 +30,49 @@ const heading2Style = {
   fontSize: '50px'
 }
 
-function Portfolio() {
+  // let buttons = []
+  // links.forEach((element) => {
+  //   buttons.append(
+  //   <Button></Button>
+  //   )
+  // });
 
-  // const d = new Date()
-  // var myage = d.getFullYear() - 2007
-  // if (myage == 18) {myage = ''}
+const NewButton = ({text, colour, icon, link}) => {
+  return (
+    <Button style = {{alignContent: 'left', display: 'flex'}} text = {`${text}\u00A0`} colour = {colour} icon = {icon} clicked = {
+      () => {window.open(link)}
+    }></Button>
+  )
+}
+
+const NewItem = ({title, logo, header, description, languagestuff}) => {
+
+  return (
+    <div className="container" style={{ backgroundColor: '#282c34'}}>
+      <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+        {`${title}\u00A0`}
+        <img src={logo} alt="MeletiLogo" width = '80' height = '80' style={{display: 'flex', justifyContent: "center"}} align = 'right'></img>
+      </h1>
+      <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
+        {header}
+      </h1>
+      <p style = {{color: 'azure', fontSize: '18px', marginTop: '10px',}}>
+        {description}      
+      </p>
+
+      {languagestuff}
+
+    </div>
+)
+
+}
+
+function Portfolio() {
 
   return (
     <>
     <div className="container" style={{ backgroundColor: '#282c34', maxWidth: '100%', margin:0, padding:'40px' }}>
-      {/* <h1 style = {headingStyle} className='header'> Hello, I'm Jeffrey Zang </h1> */}
+      {/* <h1 style = {heading2Style} className='header'> Hello, I'm Jeffrey Zang </h1> */}
       <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '100px', display: 'flex', justifyContent: 'center'}}>
         Portfolio
       </h1>
@@ -46,6 +82,11 @@ function Portfolio() {
       </p> */}
       {/* <h2 style={{ color: 'greenyellow' }}>e</h2> */}
     </div>
+
+    {/* <NewItem title = 'Meleti' logo = {meletiLogo} header = 'Submission for JAMHacks 6' 
+    description = {"The all-in-one productivity discord bot, jam-packed with features (pun intented). Meleti has a study timer, scientifically proven to produce best results, to-do lists to keep track of all your crucial tasks, recurring reminders for wordle fans that want to keep their streak, and much more! Best of all, Meleti features a reward system featuring famous artifacts from history to encourage you to keep studying. Daniel Zhang, Li Feng Yin, Jashanpreet Singh, and Jeffrey Zang submission for JAMHacks 6, Waterloo's biggest high school hackathon."}
+    
+    /> */}
 
     <div className="container" style={{ backgroundColor: '#282c34'}}>
       <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
@@ -82,9 +123,9 @@ function Portfolio() {
         {'\u00A0JavaScript, discord.js'}
         <br></br>
       </p>
-      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px', whiteSpace: 'nowrap'}}>
-        <i class={'bi bi-check-circle-fill color: yellow'} style={{ fontSize: 20 }}></i>
-        {'\u00A0Status: complete, 50% working'}
+      <p style = {{color: 'lime', fontSize: '18px', marginTop: '10px', fontSize: '22px', whiteSpace: 'nowrap'}}>
+        <i class={'bi bi-check-circle-fill color: lime'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: complete'}
       </p>
     </div>
     
@@ -137,16 +178,17 @@ function Portfolio() {
         <br></br>
         <br></br>
         Created by Jeffrey Zang.
+        <br></br>
       </p>
-      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
+      <Button style = {{alignContent: 'left', display: 'block'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
         () => {window.open('https://github.com/jeffrey-zang/galactijump')}
         }>
       </Button>
-      <p style = {{color: '#178600', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+      <p style = {{color: '#178600', fontSize: '18px', marginTop: '10px', fontSize: '22px', display: 'block'}}>
         <i class={'bi bi-slash-circle color: #178600'} style={{ fontSize: 18 }}></i>
         {'\u00A0C#, Blender, Unity3D, ShaderLab'}
       </p>
-      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
+      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px', display: 'block'}}>
         <i class={'bi bi-clock-history color: yellow'} style={{ fontSize: 20 }}></i>
         {'\u00A0Status: in progress, estimated September 2022'}
       </p>
@@ -180,6 +222,33 @@ function Portfolio() {
       <p style = {{color: 'lime', fontSize: '18px', marginTop: '10px', fontSize: '22px'}}>
         <i class={'bi bi-check-circle color: lime'} style={{ fontSize: 20 }}></i>
         {'\u00A0Status: complete, will recieve updates'}
+      </p>
+    </div>
+
+    <div className="container" style={{ backgroundColor: '#282c34'}}>
+      <h1 style = {{color: 'azure', alignItems: 'center', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+        {'Whack-A-Mole\u00A0'}
+      </h1>
+      <h1 style = {{color: 'cornflowerblue', alignItems: 'center', fontSize: '30px', display: 'flex', justifyContent: 'center'}}>
+        Unity3D
+      </h1>
+      <p style = {{color: 'azure', fontSize: '18px', marginTop: '10px',}}>
+        The most realistic mole whacking experience. My rendition of the classic arcade game Whack-A-Mole.
+        <br></br>
+        <br></br>
+        Created by Jeffrey Zang.
+      </p>
+      <Button style = {{alignContent: 'left', display: 'flex'}} text = {'Source\u00A0'} colour = 'black' icon = {'bi bi-github'} clicked={
+        () => {window.open('https://github.com/jeffrey-zang/whack-a-mole')}
+        }>
+      </Button>
+      <p style = {{color: '#178600', fontSize: '18px', marginTop: '10px', fontSize: '22px', display: 'block'}}>
+        <i class={'bi bi-slash-circle color: #178600'} style={{ fontSize: 18 }}></i>
+        {'\u00A0C#, Blender, Unity3D, ShaderLab'}
+      </p>
+      <p style = {{color: 'yellow', fontSize: '18px', marginTop: '10px', fontSize: '22px', display: 'block'}}>
+        <i class={'bi bi-clock-history color: yellow'} style={{ fontSize: 20 }}></i>
+        {'\u00A0Status: in progress, estimated September 2022'}
       </p>
     </div>
 
@@ -248,7 +317,7 @@ function Portfolio() {
       <h2 style = {{display: 'flex', color: 'azure', justifyContent: 'center', alignItems: 'center'}}>
         Copyright © 2022: Jeffrey Zang
       </h2>
-    </div>
+    </div> */
 
     </>
   );
