@@ -314,10 +314,16 @@ function Portfolio() {
     </div>
     
     <div className="container" style={{ backgroundColor: '#282c34', maxWidth: '100%', margin:0 }}>
-      <h2 style = {{display: 'flex', color: 'azure', justifyContent: 'center', alignItems: 'center'}}>
+      <h2 style = {{display: 'flex', color: 'azure', justifyContent: 'space-between'}}>
         Copyright © 2022: Jeffrey Zang
+        <button className = 'btn' onClick = {
+          () => {window.open('https://github.com/jeffrey-zang/jeffrey-zang.github.io')}
+        }>
+          {'Source '}
+          <i class="bi bi-github"></i>
+        </button>
       </h2>
-    </div> */
+    </div>
 
     </>
   );
