@@ -14,7 +14,41 @@ body {
   padding: 0;
 }
 
-.background {
+@keyframes fadeleft {
+  from {
+    margin-left: 0;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 5%;
+    opacity: 100%;
+  }
+}
+
+@keyframes fadedown {
+  from {
+    margin-top: 0;
+    opacity: 0%;
+  }
+  to {
+    margin-top: 5%;
+    opacity: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: block;
+    justify-content: none;
+  }
+}
+
+background {
   position: absolute;
   display: block;
   top: 0;
@@ -22,36 +56,31 @@ body {
   z-index: 0;
 }
 
-.container {
-  background-color: #193448;
-  width: min(40%, 1000px); 
-  min-width: 400px;
-}
-
 .left {
   background-color: #395B64;
   width: min(43%, 1000px); 
   min-width: 400px;
-  float: left;
   line-height: 70px;
   margin-left: 5%;  
   margin-top: 5%; 
   padding: 15px 30px; 
   border-radius: 30px 0px 30px 0px; 
+  animation-name: fadeleft;
+  animation-duration: 2s;
 }
 
 .right {
+  margin-right: 5%;
   background-color: #395B64;
   width: min(43%, 1000px); 
   min-width: 400px;
-  float: right;
   line-height: 70px;
-  margin-right: 5%;  
   margin-top: 5%; 
   padding: 15px 30px; 
   border-width: 3px;
   border-top: 5px solid #a5ff90; 
-  /* border-radius: 30px 0px 30px 0px;  */
+  animation-name: fadedown;
+  animation-duration: 2s;
 }
 
 .btn {
@@ -69,7 +98,7 @@ body {
 }
 
 .btn:hover {
-  color: #395B64;
+  color: #395B64; 
   background-color: #A5FF90;
 }
 
