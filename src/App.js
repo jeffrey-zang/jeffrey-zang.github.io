@@ -1,3 +1,5 @@
+import meletilogo from './logos/meletipfp.png'
+
 import React from 'react'
 import AOS from 'aos'
 AOS.init();
@@ -8,7 +10,7 @@ const App = () => {
     <>
 
     <div className = 'container'>
-      <div className = 'left' >
+      <div className = 'left' style = {{height: '50%'}}>
         
         <i className="bi bi-code" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
         <h1 style = {{marginTop: '-10px'}}>Hello, I'm</h1>
@@ -30,6 +32,12 @@ const App = () => {
           <i className = 'bi bi-stack-overflow'></i> {'Stack Overflow: '}
           <a style = {{fontWeight: 'bold'}} href = 'https://stackoverflow.com/users/14683783/larg-ank' rel = 'noreferrer' target = '_blank'>LargAnk</a>
         </h1>
+
+        <h1 style = {{fontWeight: 'lighter'}}>
+          <i className = 'bi bi-envelope'></i> {'Email: '}
+          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold'}}>jeffrey-zang@protonmail.me</a>
+        </h1>
+
         </div>
 
         <i className="bi bi-code-slash" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
@@ -62,8 +70,45 @@ const App = () => {
 
       </div>
     </div>
+    
+    <h1 data-aos = "fade-down" data-aos-duration = "1000" style = {{padding: '30px', color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '70px'}}>Portfolio</h1>
 
-    <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: ''}}>Portfolio</h1>
+    <div class="row">
+
+      <div class="column">
+        <div class="content">
+          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 style = {{textAlign: 'center', fontSize: '70px', marginTop: '-40px', color: '#a5ff90'}}>Meleti</h1>
+          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
+        </div>
+      </div>
+
+      <div class='column'>
+        <div class="content">
+          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 style = {{textAlign: 'center', fontSize: '70px', marginTop: '-40px', color: '#a5ff90'}}>Meleti</h1>
+          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
+        </div>
+      </div>
+
+      <div class='column'>
+        <div class="content">
+          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 style = {{textAlign: 'center', fontSize: '70px', marginTop: '-40px', color: '#a5ff90'}}>Meleti</h1>
+          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
+        </div>
+      </div>
+      <div class='column'>
+        <div class="content">
+          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 style = {{textAlign: 'center', fontSize: '70px', marginTop: '-40px', color: '#a5ff90'}}>Meleti</h1>
+          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>lmao</footer>
 
     </>
   )

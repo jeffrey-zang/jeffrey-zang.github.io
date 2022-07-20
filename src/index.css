@@ -36,6 +36,67 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #173F5E;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #A5FF90; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #76b966; 
+}
+
+.row {
+  margin-left: 2.5%;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 12px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #395B64;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 48%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 96%;
+  }
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -45,6 +106,9 @@ body {
   .container {
     display: block;
     justify-content: none;
+  }
+  .right {
+    margin-left: 5%;
   }
 }
 
@@ -64,10 +128,15 @@ background {
   margin-left: 5%;  
   margin-top: 5%; 
   padding: 15px 30px; 
-  border-radius: 30px 0px 30px 0px; 
+  border-radius: 40px 0px 0px 0px; 
   animation-name: fadeleft;
   animation-duration: 2s;
 }
+
+.leftcopy {
+  padding: 30px; 
+}
+
 
 .right {
   margin-right: 5%;
@@ -94,7 +163,7 @@ background {
   margin-top: 25px;
   padding: 0.3vw 0.6vw;
   font-size: 32px;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s, color 0.2s; 
 }
 
 .btn:hover {
@@ -109,6 +178,7 @@ background {
 h1 {
   color: #fff;
   font-size: 32px;
+
 }
 
 i {
