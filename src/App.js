@@ -2,6 +2,9 @@ import meletilogo from './logos/meletipfp.png'
 import farmoutlogo from './logos/farmouticon.png'
 import logo from './logos/logo.png'
 import galactijump from './logos/galactijumplogo.png'
+import policecar from './logos/police-car.png'
+import happymathlogo from './logos/happymathlogo.png'
+import simpleread from './logos/simplereadlogo.png'
 
 import React from 'react'
 import AOS from 'aos'
@@ -85,37 +88,69 @@ const App = () => {
 
       <div class="column">
         <div class="content">
-          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <img  src = {happymathlogo} alt = 'happymath' width = '100%' style = {{border: '30px solid #395B64', borderRadius: '60px'}}></img>
+          <h1 className = 'portfolioheader' style = {{fontSize: '3.2vw', marginTop: '-21px'}}>Happy Math Education</h1>
+          <h1 className = 'portfoliodesc'>Website for Happy Math Education</h1>
+        </div>
+        <div className = 'portfoliobutton'></div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img  src = {simpleread} alt = 'happymath' width = '100%' style = {{border: '30px solid #395B64'}}></img>
+          <h1 className = 'portfolioheader' style = {{fontSize: '3.3vw', marginTop: '-20px'}}>SimpleRead</h1>
+          <h1 className = 'portfoliodesc'>A simple, minimalist book review website</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img  src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader'>Meleti</h1>
           <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
         </div>
       </div>
       <div class="column">
         <div class="content">
-          <img src = {farmoutlogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <img  src = {farmoutlogo} alt = 'farmout' width = '100%' style = {{borderRadius: '60px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader' style = {{fontSize: '4.5vw'}}>Farmout</h1>
           <h1 className = 'portfoliodesc'>Discord about about farming crops and animals</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src = {logo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '2.7vw'}}>This Website</h1>
-          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src = {galactijump} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '3vw'}}>galactijump</h1>
-          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
         </div>
       </div>
     
     </div>
 
+    <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
 
-    <footer>lmao</footer>
+      <div class="column">
+        <div class="content">
+          <h1 className = 'portfolioheader' style = {{marginTop: '0px'}}>Whack-A-Mole</h1>
+          <h1 className = 'portfoliodesc'>The most realistic mole whacking experience</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img  src = {policecar} alt = 'police' width = '100%' style = {{border: '20px solid #395B64'}}></img>
+          <h1 className = 'portfolioheader' style = {{marginTop: '-100px', fontSize: '4vw'}}>Police Pursuit</h1>
+          <h1 className = 'portfoliodesc'>A simple 2D game about escaping from the police</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img  src = {logo} alt = 'thiswebsite' width = '100%' style = {{borderRadius: '200px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 className = 'portfolioheader' style = {{fontSize: '2.7vw'}}>This Website</h1>
+          <h1 className = 'portfoliodesc'>The website that you're looking at right now</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img  src = {galactijump} alt = 'galactijump' width = '100%' style = {{borderRadius: '60px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
+          <h1 className = 'portfolioheader' style = {{fontSize: '3vw'}}>galactijump</h1>
+          <h1 className = 'portfoliodesc'>Low poly space game about asteroid minerals</h1>
+        </div>
+      </div>
+    
+    </div>
+
+    <footer style = {{color: '#fff'}}>lmao</footer>
 
     </>
   )
