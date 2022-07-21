@@ -31,7 +31,7 @@ body {
     opacity: 0%;
   }
   to {
-    margin-top: 5%;
+    margin-top: 3%;
     opacity: 100%;
   }
 }
@@ -88,12 +88,18 @@ body {
   .column {
     width: 48%;
   }
+  .portfolioheader {
+    font-size: 9vw !important;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 96%;
+  }
+  .portfolioheader {
+    font-size: 13vw !important;
   }
 }
 
@@ -104,11 +110,17 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .container {
-    display: block;
-    justify-content: none;
+    display: inline-block;
   }
   .right {
-    margin-left: 5%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    width:88% !important;
+  }
+  .left {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    width: 88% !important;
   }
 }
 
@@ -122,29 +134,22 @@ background {
 
 .left {
   background-color: #395B64;
-  width: min(43%, 1000px); 
-  min-width: 400px;
+  width: 43%;
   line-height: 70px;
   margin-left: 5%;  
-  margin-top: 5%; 
+  margin-top: 3%; 
   padding: 15px 30px; 
   border-radius: 40px 0px 0px 0px; 
   animation-name: fadeleft;
   animation-duration: 2s;
 }
 
-.leftcopy {
-  padding: 30px; 
-}
-
-
 .right {
   margin-right: 5%;
   background-color: #395B64;
-  width: min(43%, 1000px); 
-  min-width: 400px;
+  width: 43%;
   line-height: 70px;
-  margin-top: 5%; 
+  margin-top: 3%; 
   padding: 15px 30px; 
   border-width: 3px;
   border-top: 5px solid #a5ff90; 
@@ -175,10 +180,19 @@ background {
   transform: scale(0.95);
 }
 
+.portfolioheader {
+  font-size: 5vw;
+  text-align: center;
+  font-size: 5vw;
+  margin-top: -40px;
+  word-wrap:normal;
+  overflow-wrap: break-word;
+  color: #a5ff90;
+}
+
 h1 {
   color: #fff;
   font-size: 32px;
-
 }
 
 i {
