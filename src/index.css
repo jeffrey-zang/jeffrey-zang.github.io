@@ -91,6 +91,9 @@ body {
   .portfolioheader {
     font-size: 9vw !important;
   }
+  .portfoliodesc {
+    font-size: 2.8vw !important;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -100,6 +103,9 @@ body {
   }
   .portfolioheader {
     font-size: 13vw !important;
+  }
+  .portfoliodesc {
+    font-size: 4vw !important;
   }
 }
 
@@ -188,6 +194,11 @@ background {
   word-wrap:normal;
   overflow-wrap: break-word;
   color: #a5ff90;
+}
+
+.portfoliodesc {
+  font-size: 1.6vw;
+  margin-left: 5px;
 }
 
 h1 {

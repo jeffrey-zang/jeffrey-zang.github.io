@@ -74,67 +74,46 @@ const App = () => {
       </div>
     </div>
     
-    <h1 data-aos = "fade-down" data-aos-duration = "2000" style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
-
+    <div data-aos = "fade-down" data-aos-duration = "2000" >
+      <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
+      <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
+        A collection of my programming projects, creations, and experiences
+      </h1>
+    </div>
+    
     <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
 
       <div class="column">
         <div class="content">
           <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader'>Meleti</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot</h1>
+          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
         </div>
       </div>
-
-      <div class='column'>
+      <div class="column">
         <div class="content">
-          <img src = {farmoutlogo} alt = 'meletilogo' width = '100%' style = {{border: '40px solid #395B64', marginTop: '-10px', borderRadius: '50px'}}></img>
+          <img src = {farmoutlogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader' style = {{fontSize: '4.5vw'}}>Farmout</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>Discord bot about being a farmer</h1>
+          <h1 className = 'portfoliodesc'>Discord about about farming crops and animals</h1>
         </div>
       </div>
-
-      <div class='column'>
+      <div class="column">
         <div class="content">
-          <img src = {logo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px', borderRadius: '200px'}}></img>
+          <img src = {logo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader' style = {{fontSize: '2.7vw'}}>This Website</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>The website that you're looking at right now</h1>
+          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
         </div>
       </div>
-      <div class='column'>
+      <div class="column">
         <div class="content">
           <img src = {galactijump} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
           <h1 className = 'portfolioheader' style = {{fontSize: '3vw'}}>galactijump</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>Low poly space game about asteroid minerals</h1>
+          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
         </div>
       </div>
-
+    
     </div>
 
-    <div data-aos-duration = "2000" class="row">
-      <div class='column'>
-        <div class="content">
-          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader'>Meleti</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
-        </div>
-      </div>
-      <div class='column'>
-        <div class="content">
-          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader'>Meleti</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
-        </div>
-      </div>
-      <div class='column'>
-        <div class="content">
-          <img src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader'>Meleti</h1>
-          <h1 style = {{fontSize: '25px', marginLeft: '5px'}}>All-in-one productivity discord bot, jam-packed with features</h1>
-        </div>
-      </div>
-
-    </div>
 
     <footer>lmao</footer>
 
