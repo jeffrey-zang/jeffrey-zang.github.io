@@ -11,6 +11,7 @@ import React from 'react'
 import AOS from 'aos'
 
 import PortfolioItem from './PortfolioItem'
+import PortfolioOverlay from './PortfolioOverlay'
 
 const PortfolioItems = {
 
@@ -18,66 +19,120 @@ const PortfolioItems = {
     title: 'Happy Math Education',
     description: 'Website for Happy Math Education',
     logo: happymathlogo,
-    fontsize: '3.2vw'
+    fontsize: '3.2vw',
+
+    overlaydesc: 'lol'
   },
 
   simpleread: {
     title: 'SimpleRead',
     description: 'A simple, minimalist book reviewing website',
     logo: simpleread,
-    fontsize: '3.3vw'
+    fontsize: '3.3vw',
+
+    overlaydesc: 'lol'
   },
 
   meleti: {
     title: 'Meleti',
     description: 'An all-in-one productivity discord bot',
     logo: meletilogo,
-    fontsize: ''
+    fontsize: '',
+
+    overlaydesc: 'lol'
   },
   
   farmout: {
     title: 'Farmout',
     description: 'Discord bot about farming crops and animals',
     logo: farmoutlogo,
-    fontsize: '4.4vw'
+    fontsize: '4.4vw',
+    
+    overlaydesc: 'lol'
   },
 
   whackamole: {
     title: 'Whack-A-Mole',
     description: 'The most realistic mole whacking experience',
     logo: molelogo,
-    fontsize: '2.5vw'
+    fontsize: '2.5vw',
+
+    overlaydesc: 'lol'
   },
 
   galactijump: {
     title: 'galactijump',
     description: 'Low poly space game about asteroid minerals',
     logo: galactijump,
-    fontsize: '2.6vw'
+    fontsize: '2.6vw',
+    
+    overlaydesc: 'lol'
   },
 
   thiswebsite: {
     title: 'This Website',
     description: 'The website that you\'re looking at right now',
     logo: logo,
-    fontsize: '2.6vw'
+    fontsize: '2.6vw',
+    
+    overlaydesc: 'lol'
   },
 
   policepursuit: {
     title: 'Police Pursuit',
     description: 'A simple 2D game about escaping from a police car',
     logo: policecar,
-    fontsize: '3vw'
+    fontsize: '3vw',
+
+    overlaydesc: 'lol'
   }
 
 }
 
 let PortfolioItemList = []
+export let PortfolioItemNames = []
 
 for (let item in PortfolioItems) {
 
   PortfolioItemList.push(
     <PortfolioItem title = {PortfolioItems[item].title} description = {PortfolioItems[item].description} logo = {PortfolioItems[item].logo} fontsize = {PortfolioItems[item].fontsize}/>
+  )
+  PortfolioItemNames.push(
+    PortfolioItems[item].title
+  )
+}
+
+const PortfolioOverlays = {
+  happymath: {
+    title: 'Happy Math Education',
+    description: 'Website for Happy Math Education',
+    logo: happymathlogo
+  },
+  simpleread: {
+    title: 'SimpleRead',
+    description: 'A simple, minimalist book reviewing website',
+    logo: simpleread
+  },
+  meleti: {
+    title: 'Meleti',
+    description: 'An all-in-one productivity discord bot',
+    logo: meletilogo
+  },
+  farmout: {
+    title: 'Farmout',
+    description: 'Discord bot about farming crops and animals',
+    logo: farmoutlogo
+  },
+  whackamole: {
+    title: 'Whack-A-Mole'
+  }
+}
+
+let PortfolioOverlayList = []
+
+for (let item in PortfolioItems) {
+  PortfolioOverlayList.push(
+    <PortfolioOverlay title = {PortfolioItems[item].title} description = {PortfolioItems[item].overlaydesc} logo = {PortfolioItems[item].logo}/>
   )
 }
 
@@ -156,18 +211,10 @@ const App = () => {
       </h1>
     </div>
     
-    <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
-
+    <div data-aos = 'fade-right' data-aos-duration = "3000" class="row">
       {PortfolioItemList}
-    
+      {PortfolioOverlayList}
     </div>
-
-    <div id = 'overlay' className='overlay' onClick = {
-      () => {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('portfoliooverlay').style.display = 'none';
-      }
-    }></div>
 
     <footer>
       <p style = {{marginLeft: '5px'}}>
