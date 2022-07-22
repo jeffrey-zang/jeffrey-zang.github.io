@@ -87,12 +87,16 @@ const App = () => {
     <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
 
       <div class="column">
-        <div class="content">
+        <div class="content" onClick = {
+          () => {
+            let overlay = document.getElementById('overlay');
+            overlay.style.display = 'block';
+          }
+        }>
           <img  src = {happymathlogo} alt = 'happymath' width = '100%' style = {{border: '30px solid #395B64', borderRadius: '60px'}}></img>
           <h1 className = 'portfolioheader' style = {{fontSize: '3.2vw', marginTop: '-21px'}}>Happy Math Education</h1>
           <h1 className = 'portfoliodesc'>Website for Happy Math Education</h1>
         </div>
-        <div className = 'portfoliobutton'></div>
       </div>
       <div class="column">
         <div class="content">
@@ -150,7 +154,25 @@ const App = () => {
     
     </div>
 
-    <footer style = {{color: '#fff'}}>lmao</footer>
+    <div id = 'overlay' className='overlay' onClick = {
+      () => {
+        document.getElementById('overlay').style.display = 'none';
+      }
+    }></div>
+
+    <footer>
+      <p style = {{marginLeft: '5px'}}>
+        Copyright © 2022: Jeffrey Zang
+      </p>
+      <p style = {{cursor: 'pointer'}} onClick = {
+        () => {
+          window.open('https://github.com/jeffrey-zang/jeffrey-zang.github.io')
+        }
+      }>
+        {'Source '}
+        <i class = 'bi bi-github' style = {{fontSize: '20px'}}></i>
+      </p>
+    </footer>
 
     </>
   )
