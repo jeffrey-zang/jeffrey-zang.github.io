@@ -5,9 +5,81 @@ import galactijump from './logos/galactijumplogo.png'
 import policecar from './logos/police-car.png'
 import happymathlogo from './logos/happymathlogo.png'
 import simpleread from './logos/simplereadlogo.png'
+import molelogo from './logos/molelogo.png'
 
 import React from 'react'
 import AOS from 'aos'
+
+import PortfolioItem from './PortfolioItem'
+
+const PortfolioItems = {
+
+  happymath: {
+    title: 'Happy Math Education',
+    description: 'Website for Happy Math Education',
+    logo: happymathlogo,
+    fontsize: '3.2vw'
+  },
+
+  simpleread: {
+    title: 'SimpleRead',
+    description: 'A simple, minimalist book reviewing website',
+    logo: simpleread,
+    fontsize: '3.3vw'
+  },
+
+  meleti: {
+    title: 'Meleti',
+    description: 'An all-in-one productivity discord bot',
+    logo: meletilogo,
+    fontsize: ''
+  },
+  
+  farmout: {
+    title: 'Farmout',
+    description: 'Discord bot about farming crops and animals',
+    logo: farmoutlogo,
+    fontsize: '4.4vw'
+  },
+
+  whackamole: {
+    title: 'Whack-A-Mole',
+    description: 'The most realistic mole whacking experience',
+    logo: molelogo,
+    fontsize: '2.5vw'
+  },
+
+  galactijump: {
+    title: 'galactijump',
+    description: 'Low poly space game about asteroid minerals',
+    logo: galactijump,
+    fontsize: '2.6vw'
+  },
+
+  thiswebsite: {
+    title: 'This Website',
+    description: 'The website that you\'re looking at right now',
+    logo: logo,
+    fontsize: '2.6vw'
+  },
+
+  policepursuit: {
+    title: 'Police Pursuit',
+    description: 'A simple 2D game about escaping from a police car',
+    logo: policecar,
+    fontsize: '3vw'
+  }
+
+}
+
+let PortfolioItemList = []
+
+for (let item in PortfolioItems) {
+
+  PortfolioItemList.push(
+    <PortfolioItem title = {PortfolioItems[item].title} description = {PortfolioItems[item].description} logo = {PortfolioItems[item].logo} fontsize = {PortfolioItems[item].fontsize}/>
+  )
+}
 
 const App = () => {
   AOS.init();
@@ -54,7 +126,7 @@ const App = () => {
 
         <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '60px', wordWrap: 'normal'}}>Portfolio</h1>
         <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px'}}>
-          > My projects, creations, and experiences
+          {'> My projects, creations, and experiences'}
         </h1>
         <button className = 'btn'>
           <i className="bi bi-folder2-open"></i>
@@ -63,7 +135,7 @@ const App = () => {
         
         <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '60px', wordWrap: 'normal'}}>Resume</h1>
         <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px'}}>
-          > My achievements, extracurriculars, work and volunteering experience
+          {'> My achievements, extracurriculars, work and volunteering experience'}
         </h1>
         <button className = 'btn' onClick = {
           () => {
@@ -86,77 +158,14 @@ const App = () => {
     
     <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
 
-      <div class="column">
-        <div class="content" onClick = {
-          () => {
-            let overlay = document.getElementById('overlay');
-            overlay.style.display = 'block';
-          }
-        }>
-          <img  src = {happymathlogo} alt = 'happymath' width = '100%' style = {{border: '30px solid #395B64', borderRadius: '60px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '3.2vw', marginTop: '-21px'}}>Happy Math Education</h1>
-          <h1 className = 'portfoliodesc'>Website for Happy Math Education</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {simpleread} alt = 'happymath' width = '100%' style = {{border: '30px solid #395B64'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '3.3vw', marginTop: '-20px'}}>SimpleRead</h1>
-          <h1 className = 'portfoliodesc'>A simple, minimalist book review website</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {meletilogo} alt = 'meletilogo' width = '100%' style = {{border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader'>Meleti</h1>
-          <h1 className = 'portfoliodesc'>All-in-one productivity discord bot</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {farmoutlogo} alt = 'farmout' width = '100%' style = {{borderRadius: '60px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '4.5vw'}}>Farmout</h1>
-          <h1 className = 'portfoliodesc'>Discord about about farming crops and animals</h1>
-        </div>
-      </div>
-    
-    </div>
-
-    <div data-aos = 'fade-right' data-aos-duration = "2000" class="row">
-
-      <div class="column">
-        <div class="content">
-          <h1 className = 'portfolioheader' style = {{marginTop: '0px'}}>Whack-A-Mole</h1>
-          <h1 className = 'portfoliodesc'>The most realistic mole whacking experience</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {policecar} alt = 'police' width = '100%' style = {{border: '20px solid #395B64'}}></img>
-          <h1 className = 'portfolioheader' style = {{marginTop: '-100px', fontSize: '4vw'}}>Police Pursuit</h1>
-          <h1 className = 'portfoliodesc'>A simple 2D game about escaping from the police</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {logo} alt = 'thiswebsite' width = '100%' style = {{borderRadius: '200px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '2.7vw'}}>This Website</h1>
-          <h1 className = 'portfoliodesc'>The website that you're looking at right now</h1>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img  src = {galactijump} alt = 'galactijump' width = '100%' style = {{borderRadius: '60px', border: '50px solid #395B64', marginTop: '-10px'}}></img>
-          <h1 className = 'portfolioheader' style = {{fontSize: '3vw'}}>galactijump</h1>
-          <h1 className = 'portfoliodesc'>Low poly space game about asteroid minerals</h1>
-        </div>
-      </div>
+      {PortfolioItemList}
     
     </div>
 
     <div id = 'overlay' className='overlay' onClick = {
       () => {
         document.getElementById('overlay').style.display = 'none';
+        document.getElementById('portfoliooverlay').style.display = 'none';
       }
     }></div>
 

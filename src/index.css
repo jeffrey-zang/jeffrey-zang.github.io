@@ -85,7 +85,7 @@ body {
   transition: opacity 0.2s, transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease;
   -moz-transition: -moz-transform 0.2s ease;
-  height: 69vh;
+  height: 35vw;
 }
 
 .content:hover {
@@ -106,9 +106,36 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(0,0,0, 0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+@keyframes portfoliooverlayfadedown {
+  from {
+    top: 0%;
+    opacity: 0.5;
+  }
+  to {
+    top: 10%;
+    opacity: 1;
+  }
+}
+
+.portfoliooverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 70%; /* Full width (cover the whole page) */
+  height: 80%; /* Full height (cover the whole page) */
+  top: 10%;
+  bottom: 10%;
+  left: 15%;
+  right: 15%;
+  background-color:#395B64; 
+  z-index: 999;
+  border-radius: 10px;
+  animation-name: portfoliooverlayfadedown;
+  animation-duration: 0.5s;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -117,7 +144,7 @@ body {
     width: 48%;
   }
   .content {
-    height: 100vh;
+    height: 70vw;
   }
   .portfolioheader {
     font-size: 7vw !important;
@@ -131,6 +158,9 @@ body {
 @media screen and (max-width: 600px) {
   .column {
     width: 96%;
+  }
+  .content {
+    height: 110vw;
   }
   .portfolioheader {
     font-size: 10vw !important;
