@@ -21,7 +21,33 @@ const PortfolioItems = {
     logo: happymathlogo,
     fontsize: '3.2vw',
 
-    overlaydesc: 'lol'
+    overlaydesc: `
+    Website for Happy Math Education
+    
+    Our Mission: To help kids enjoy maths
+
+    This website is the new and improved website for Happy Math Education, a tutoring service for math contests. Apart from a completely new user interface, colours, layout, and animations, this new website features many new features. Below is a list of all the changes:
+    
+    - New navbar
+    - Animations and gradient colour on home page
+    - Icons by Bootstrap Icons
+    - Improved navigation from "View Policy" and "Back to Top" buttons
+    - Timeline and math contests with dropdown for grade
+    - Open source, ability to report bugs and request features
+    - Dependencies
+    - React
+    - Bootstrap Icons
+    
+    Authors
+    Jeffrey Zang
+    
+    Version History
+    1.0 Initial Release
+    
+    License
+    This project is licensed under the BSD-3 Clause License - see the LICENSE file for details
+    
+    Previous website: https://www.happymatheducation.com/    `
   },
 
   simpleread: {
@@ -102,37 +128,11 @@ for (let item in PortfolioItems) {
   )
 }
 
-const PortfolioOverlays = {
-  happymath: {
-    title: 'Happy Math Education',
-    description: 'Website for Happy Math Education',
-    logo: happymathlogo
-  },
-  simpleread: {
-    title: 'SimpleRead',
-    description: 'A simple, minimalist book reviewing website',
-    logo: simpleread
-  },
-  meleti: {
-    title: 'Meleti',
-    description: 'An all-in-one productivity discord bot',
-    logo: meletilogo
-  },
-  farmout: {
-    title: 'Farmout',
-    description: 'Discord bot about farming crops and animals',
-    logo: farmoutlogo
-  },
-  whackamole: {
-    title: 'Whack-A-Mole'
-  }
-}
-
 let PortfolioOverlayList = []
 
 for (let item in PortfolioItems) {
   PortfolioOverlayList.push(
-    <PortfolioOverlay title = {PortfolioItems[item].title} description = {PortfolioItems[item].overlaydesc} logo = {PortfolioItems[item].logo}/>
+    <PortfolioOverlay title = {PortfolioItems[item].title} longdesc = {PortfolioItems[item].overlaydesc} description = {PortfolioItems[item].description} logo = {PortfolioItems[item].logo}/>
   )
 }
 
@@ -168,7 +168,7 @@ const App = () => {
 
         <h1 style = {{fontWeight: 'lighter'}}>
           <i className = 'bi bi-envelope'></i> {'Email: '}
-          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold'}}>jeffrey-zang@protonmail.me</a>
+          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold', overflow: 'scroll'}}>jeffrey-zang@protonmail.me</a>
         </h1>
 
         </div>
@@ -189,8 +189,8 @@ const App = () => {
         </button>
         
         <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '60px', wordWrap: 'normal'}}>Resume</h1>
-        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px'}}>
-          {'> My achievements, extracurriculars, work and volunteering experience'}
+        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px', overflow: 'auto'}}>
+          {'> My achievements, extracurriculars, work and volunteering'}
         </h1>
         <button className = 'btn' onClick = {
           () => {
@@ -211,7 +211,7 @@ const App = () => {
       </h1>
     </div>
     
-    <div data-aos = 'fade-right' data-aos-duration = "3000" class="row">
+    <div data-aos = 'fade-right' data-aos-duration = "1500" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>
