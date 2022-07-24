@@ -27,11 +27,13 @@ const PortfolioItems = {
     buttons: {
       github: {
         title: 'GitHub',
-        icon: 'bi bi-github'
+        icon: 'bi bi-github',
+        link: 'https://github.com/jeffrey-zang/happy-math-education'
       },
       link: {
         title: 'Link',
-        icon: 'bi bi-link-45deg'
+        icon: 'bi bi-link-45deg',
+        link: 'https://jeffrey-zang.github.io/happy-math-education/'
       },
     },
 
@@ -68,18 +70,60 @@ Previous website: https://www.happymatheducation.com/    `
     title: 'SimpleRead',
     description: 'A simple, minimalist book reviewing website',
     logo: simpleread,
-    fontsize: '3.3vw',
+    fontsize: '3.3vw',    
+    languages: 'Javascript, HTML/CC',
+    status: 'In Progress',
+    statuscolor: '#FFFF00',
 
-    overlaydesc: 'lol'
-  },
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/lifeng-yin/simpleread'
+      },
+    },
+
+    overlaydesc: `Farmout
+A simple, minimalist book review website
+`    
+},
 
   meleti: {
     title: 'Meleti',
     description: 'An all-in-one productivity discord bot',
     logo: meletilogo,
-    fontsize: '',
+    fontsize: '',    
+    languages: 'Python',
+    status: 'Complete',
+    statuscolor: '#a5ff90',
 
-    overlaydesc: 'lol'
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/Yourself1011/meleti'
+      },
+      link: {
+        title: 'Discord Invite',
+        icon: 'bi bi-link-45deg',
+        link: 'https://discord.com/invite/wyPGW6Asbx'
+      },
+      devpost: {
+        title: 'Devpost',
+        icon: 'bi bi-people',
+        link: 'https://devpost.com/software/meleti'
+      },
+    },
+
+    overlaydesc: `Daniel Zhang, Li Feng Yin, Jashanpreet Singh, and Jeffrey Zang's submission for Jamhacks 6.
+
+The all-in-one productivity discord bot, jam-packed with features (pun intented). Meleti has a study timer, scientifically proven to produce best results, to-do lists to keep track of all your crucial tasks, recurring reminders for wordle fans that want to keep their streak, and much more! Best of all, Meleti features a reward system featuring famous artifacts from history to encourage you to keep studying.
+    
+Works Cited
+    
+Images: https://www.flaticon.com/authors/special/lineal-color?author_id=1
+Discord.js: https://discord.js.org/#/
+    `
   },
   
   farmout: {
@@ -87,8 +131,45 @@ Previous website: https://www.happymatheducation.com/    `
     description: 'Discord bot about farming crops and animals',
     logo: farmoutlogo,
     fontsize: '4.4vw',
+    languages: 'Python',
+    status: 'Complete, 50% working',
+    statuscolor: '#FFFF00',
+
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/Yourself1011/farmoutbot'
+      },
+      link: {
+        title: 'Discord Invite',
+        icon: 'bi bi-link-45deg',
+        link: 'https://discord.com/oauth2/authorize?client_id=834116780502679572&permissions=67628225&scope=bot'
+      },
+      devpost: {
+        title: 'Top.gg',
+        icon: 'bi bi-robot',
+        link: 'https://top.gg/bot/795319933314662452'
+      },
+    },
+
+    overlaydesc: `Farmout
+A currency bot where the player grows crops, takes care of animals, and trades with merchants to gain coins.
     
-    overlaydesc: 'lol'
+Farmout is a Currency/Fun bot where you own and take care of a farm.
+    
+There are tons of different animals that you can take care of, all giving you unique items like wool and milk. You have to plant and water seeds for crops, which you can sell and trade with the marketplace for other cool items. We’ve only recently added 2 new revolutionary updates: contracts and locations. These make the game feel more realistic, and make it feel like you are actually running a farm.
+    
+Built With
+- Python
+- Discord.py
+- Replit database
+- Uptimerobot
+- Invite Link
+https://discord.com/oauth2/authorize?client_id=834116780502679572&permissions=67628225&scope=bot
+    
+With weekly updates, active devs, and an awesome community, there’s no reason not to try Farmout!
+`    
   },
 
   whackamole: {
@@ -153,7 +234,7 @@ for (let item in PortfolioItems) {
     logo = {PortfolioItems[item].logo}
     languages = {PortfolioItems[item].languages}
     status = {PortfolioItems[item].status}
-    statuscolor = {PortfolioItems[item].statuscolour}
+    statuscolor = {PortfolioItems[item].statuscolor}
     buttons = {PortfolioItems[item].buttons}
     />
   )
@@ -215,7 +296,11 @@ const App = () => {
         <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px'}}>
           {'> My projects, creations, and experiences'}
         </h1>
-        <button className = 'btn'>
+        <button className = 'btn' onClick = {
+          () => {
+            document.getElementById('portfoliotitle').scrollIntoView({ behavior: 'smooth', top: 300})
+          }
+        }>
           <i className="bi bi-folder2-open"></i>
           {' View Portfolio'}
         </button>
@@ -236,14 +321,14 @@ const App = () => {
       </div>
     </div>
     
-    <div data-aos = "fade-down" data-aos-duration = "2000" >
-      <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
+    <div data-aos = "fade-down" data-aos-duration = "800" >
+      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
     
-    <div data-aos = 'fade-right' data-aos-duration = "1500" class="row">
+    <div data-aos = 'fade-right' data-aos-duration = "800" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>

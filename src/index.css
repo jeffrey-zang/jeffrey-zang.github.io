@@ -117,7 +117,7 @@ body {
     opacity: 0.7;
   }
   to {
-    top: 10%;
+    top: 7.5%;
     opacity: 1;
   }
 }
@@ -136,7 +136,7 @@ body {
   padding: 10px 10px 10px 10px;
   border-radius: 25px;
   animation-name: portfoliooverlayfadedown;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
 }
 
 .portfolioheader {
@@ -172,10 +172,10 @@ body {
     height: 70vw;
   }
   .portfolioheader {
-    font-size: 7vw !important;
+    font-size: 4vw !important;
   }
   .portfoliodesc {
-    font-size: 2.8vw !important;
+    font-size: 2vw !important;
   }
 }
 
@@ -261,6 +261,10 @@ background {
   padding: 0.3vw 0.6vw;
   font-size: 32px;
   transition: background-color 0.3s, color 0.2s; 
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 }
 
 .btn:hover {

@@ -6,13 +6,13 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
     for (let item in buttons) {
         buttonlist.push(
             <>
-            <a href = 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'>
+            <a target = '_blank' href = {buttons[item].link}>
                 {`${buttons[item].title} `}
                 <i style = {{fontSize: '1.6vw'}} class ={buttons[item].icon}></i>
             </a>
             </>
         )
-        if (item != Object.keys(buttons).pop()) {
+        if (item !== Object.keys(buttons).pop()) {
             buttonlist.push(
                 <h1 style = {{display: 'inline'}}>
                 {'  |  '} 
@@ -40,15 +40,17 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
 
         <div style = {{position: 'absolute', bottom: '0', fontSize: '1.6vw', color: '#fff', fontWeight: 'bold', width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '5px'}}>
                 
-            <div style = {{color: '#a5ff90'}}>
+            <div style = {{color: '#a5ff90', marginBottom: '5px', marginLeft: '5px'}}>
                 <i class = 'bi bi-code-slash' style = {{fontSize: '1.6vw'}}></i>
                 {` ${languages} `}
                 <br></br>
-                <i class = 'bi bi-check-circle' style = {{fontSize: '1.6vw', color: {statuscolor}}}></i>
-                {` ${status}`}
+                <h1 style = {{fontSize: '1.6vw', color: statuscolor}}>
+                    <i class = 'bi bi-check-circle' style = {{fontSize: '1.6vw'}}></i>
+                    {` ${status}`}
+                </h1>
             </div>
 
-            <div style = {{marginRight: '15px', marginTop: '10px'}}>
+            <div style = {{marginRight: '30px', marginTop: '10px'}}>
                 {buttonlist}
             </div>
 
