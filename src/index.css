@@ -138,6 +138,30 @@ body {
   animation-duration: 0.7s;
 }
 
+.portfolioheader {
+  font-size: 5vw;
+  text-align: center;
+  font-size: 5vw;
+  margin-top: -40px;
+  color: #a5ff90;
+}
+
+.portfoliodesc {
+  font-size: 1.6vw;
+  margin-left: 5px;
+}
+
+.portfoliolongdesc {
+  position: fixed;
+  width: 41%;
+  height: 70%;
+  font-size: 1.4vw;
+  white-space: pre-wrap;
+  overflow: scroll;
+  overflow-x: hidden !important;
+  /* text-overflow: ellipsis; */
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1000px) {
   .column {
@@ -247,29 +271,6 @@ background {
   transform: scale(0.95);
 }
 
-.portfolioheader {
-  font-size: 5vw;
-  text-align: center;
-  font-size: 5vw;
-  margin-top: -40px;
-  word-wrap:normal;
-  overflow-wrap: break-word;
-  color: #a5ff90;
-}
-
-.portfoliodesc {
-  font-size: 1.6vw;
-  margin-left: 5px;
-}
-
-.portfoliolongdesc {
-  margin-top: 5px;
-  font-size: 1.6vw;
-  margin-left: 5px;
-  white-space: pre-wrap;
-  overflow: none !important;
-  /* text-overflow: ellipsis; */
-}
 
 h1 {
   color: #fff;

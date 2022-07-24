@@ -22,32 +22,33 @@ const PortfolioItems = {
     fontsize: '3.2vw',
 
     overlaydesc: `
-    Website for Happy Math Education
+Website for Happy Math Education
     
-    Our Mission: To help kids enjoy maths
+Our Mission: To help kids enjoy maths
 
-    This website is the new and improved website for Happy Math Education, a tutoring service for math contests. Apart from a completely new user interface, colours, layout, and animations, this new website features many new features. Below is a list of all the changes:
+This website is the new and improved website for Happy Math Education, a tutoring service for math contests. Apart from a completely new user interface, colours, layout, and animations, this new website features many new features. Below is a list of all the changes:
     
-    - New navbar
-    - Animations and gradient colour on home page
-    - Icons by Bootstrap Icons
-    - Improved navigation from "View Policy" and "Back to Top" buttons
-    - Timeline and math contests with dropdown for grade
-    - Open source, ability to report bugs and request features
-    - Dependencies
-    - React
-    - Bootstrap Icons
+- New navbar
+- Animations and gradient colour on home page
+- Icons by Bootstrap Icons
+- Improved navigation from "View Policy" and "Back to Top" buttons
+- Timeline and math contests with dropdown for grade
+- Open source, ability to report bugs and request features
+
+Dependencies
+- React
+- Bootstrap Icons
     
-    Authors
-    Jeffrey Zang
+Authors
+Jeffrey Zang
     
-    Version History
-    1.0 Initial Release
+Version History
+1.0 Initial Release
     
-    License
-    This project is licensed under the BSD-3 Clause License - see the LICENSE file for details
+License
+This project is licensed under the BSD-3 Clause License - see the LICENSE file for details
     
-    Previous website: https://www.happymatheducation.com/    `
+Previous website: https://www.happymatheducation.com/    `
   },
 
   simpleread: {
@@ -204,14 +205,14 @@ const App = () => {
       </div>
     </div>
     
-    <div data-aos = "fade-down" data-aos-duration = "2000" >
+    <div data-aos = "fade-down" data-aos-duration = "800" >
       <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
     
-    <div data-aos = 'fade-right' data-aos-duration = "1500" class="row">
+    <div data-aos = 'fade-right' data-aos-duration = "800" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>
