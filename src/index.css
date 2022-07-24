@@ -126,9 +126,9 @@ body {
   position: fixed;
   display: none; /* Hidden by default */
   width: 70%; /* Full width (cover the whole page) */
-  height: 80%; /* Full height (cover the whole page) */
-  top: 10%;
-  bottom: 10%;
+  height: 85%; /* Full height (cover the whole page) */
+  top: 7.5%;
+  bottom: 7.5%;
   left: 15%;
   right: 15%;
   background-color:#395B64; 
@@ -155,7 +155,7 @@ body {
 .portfoliolongdesc {
   position: fixed;
   width: 41%;
-  height: 70%;
+  height: 75%;
   font-size: 1.4vw;
   white-space: pre-wrap;
   overflow: scroll;

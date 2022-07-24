@@ -21,8 +21,21 @@ const PortfolioItems = {
     logo: happymathlogo,
     fontsize: '3.2vw',
 
-    overlaydesc: `
-Website for Happy Math Education
+    languages: 'Javascript, HTML/CSS',
+    status: 'Complete, will recieve updates',
+    statuscolor: '#a5ff90',
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github'
+      },
+      link: {
+        title: 'Link',
+        icon: 'bi bi-link-45deg'
+      },
+    },
+
+    overlaydesc: `Website for Happy Math Education
     
 Our Mission: To help kids enjoy maths
 
@@ -133,12 +146,30 @@ let PortfolioOverlayList = []
 
 for (let item in PortfolioItems) {
   PortfolioOverlayList.push(
-    <PortfolioOverlay title = {PortfolioItems[item].title} longdesc = {PortfolioItems[item].overlaydesc} description = {PortfolioItems[item].description} logo = {PortfolioItems[item].logo}/>
+    <PortfolioOverlay 
+    title = {PortfolioItems[item].title} 
+    longdesc = {PortfolioItems[item].overlaydesc} 
+    description = {PortfolioItems[item].description} 
+    logo = {PortfolioItems[item].logo}
+    languages = {PortfolioItems[item].languages}
+    status = {PortfolioItems[item].status}
+    statuscolor = {PortfolioItems[item].statuscolour}
+    buttons = {PortfolioItems[item].buttons}
+    />
   )
 }
 
 const App = () => {
   AOS.init();
+
+  window.onscroll = function() {
+    document.getElementById('overlay').style.display = 'none';
+    for (let item in PortfolioItemNames) {
+      if (item.offsetParent == null) {
+      document.getElementById(PortfolioItemNames[item]).style.display = 'none'
+      }
+    }
+  }
   
   return (
     <>

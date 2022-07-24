@@ -1,6 +1,26 @@
 import React from 'react'
 
-const PortfolioOverlay = ({title, logo, description, longdesc}) => {
+const PortfolioOverlay = ({title, logo, description, longdesc, languages, status, statuscolor, buttons}) => {
+
+    let buttonlist = []
+    for (let item in buttons) {
+        buttonlist.push(
+            <>
+            <a href = 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'>
+                {`${buttons[item].title} `}
+                <i style = {{fontSize: '1.6vw'}} class ={buttons[item].icon}></i>
+            </a>
+            </>
+        )
+        if (item != Object.keys(buttons).pop()) {
+            buttonlist.push(
+                <h1 style = {{display: 'inline'}}>
+                {'  |  '} 
+                </h1>
+            )
+        }
+    }
+
     return (
     <div id = {title} className = 'portfoliooverlay'>
 
@@ -22,24 +42,14 @@ const PortfolioOverlay = ({title, logo, description, longdesc}) => {
                 
             <div style = {{color: '#a5ff90'}}>
                 <i class = 'bi bi-code-slash' style = {{fontSize: '1.6vw'}}></i>
-                {' Javascript, HTML/CSS '}
+                {` ${languages} `}
                 <br></br>
-                <i class = 'bi bi-check-circle' style = {{fontSize: '1.6vw'}}></i>
-                {' Complete, recieving updates'}
+                <i class = 'bi bi-check-circle' style = {{fontSize: '1.6vw', color: {statuscolor}}}></i>
+                {` ${status}`}
             </div>
 
             <div style = {{marginRight: '15px', marginTop: '10px'}}>
-                <a href = 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'>
-                    {'Source '}
-                    <i style = {{fontSize: '1.6vw'}} class ='bi bi-github'></i>
-                </a>
-                <h1 style = {{display: 'inline'}}>
-                {'  |  '} 
-                </h1>
-                <a href = 'https://jeffrey-zang.github.io/happy-math-education/'>
-                    {'Link '}
-                    <i style = {{fontSize: '1.6vw'}} class ='bi bi-link-45deg'></i>
-                </a>
+                {buttonlist}
             </div>
 
         </div>
