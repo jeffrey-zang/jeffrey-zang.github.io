@@ -133,6 +133,7 @@ body {
   right: 15%;
   background-color:#395B64; 
   z-index: 999;
+  padding: 10px 10px 10px 10px;
   border-radius: 25px;
   animation-name: portfoliooverlayfadedown;
   animation-duration: 0.7s;

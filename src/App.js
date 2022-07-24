@@ -205,14 +205,14 @@ const App = () => {
       </div>
     </div>
     
-    <div data-aos = "fade-down" data-aos-duration = "800" >
+    <div data-aos = "fade-down" data-aos-duration = "2000" >
       <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
     
-    <div data-aos = 'fade-right' data-aos-duration = "800" class="row">
+    <div data-aos = 'fade-right' data-aos-duration = "1500" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>
