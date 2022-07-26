@@ -19,6 +19,7 @@ jeffrey-zang.github.io is my personal website. It contains my portfolio of probj
 - [ ] Add About Me
 - [ ] Add LinkedIn
 - [ ] Embed Resume
+- [ ] Add my skills section
 
 
 ## License
