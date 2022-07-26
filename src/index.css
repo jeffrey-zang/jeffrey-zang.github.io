@@ -228,7 +228,6 @@ background {
 }
 
 .left {
-  background-color: #395B64;
   width: 43%;
   line-height: 70px;
   margin-left: 5%;  
@@ -238,11 +237,12 @@ background {
   animation-name: fadeleft;
   animation-duration: 2s;
   z-index: 1;
+  backdrop-filter: blur(4px);
+  background-color: rgba(57, 91, 100, 0.5);
 }
 
 .right {
   margin-right: 5%;
-  background-color: #395B64;
   width: 43%;
   line-height: 70px;
   margin-top: 3%; 
@@ -253,6 +253,8 @@ background {
   animation-duration: 2s;
   z-index: 1;
   border-radius: 0px 0px 40px 0px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(57, 91, 100, 0.5);
 }
 
 .btn {
