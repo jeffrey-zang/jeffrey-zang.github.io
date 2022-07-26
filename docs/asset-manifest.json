@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3af7c1e6.css",
+    "main.css": "/static/css/main.e1af7605.css",
     "main.js": "/static/js/main.30c48bac.js",
     "static/js/787.1edf3b51.chunk.js": "/static/js/787.1edf3b51.chunk.js",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
@@ -14,12 +14,12 @@
     "static/media/police-car.png": "/static/media/police-car.3be1842ae8395712e0ee.png",
     "static/media/galactijumplogo.png": "/static/media/galactijumplogo.a16f960cb257a6fe88bc.png",
     "index.html": "/index.html",
-    "main.3af7c1e6.css.map": "/static/css/main.3af7c1e6.css.map",
+    "main.e1af7605.css.map": "/static/css/main.e1af7605.css.map",
     "main.30c48bac.js.map": "/static/js/main.30c48bac.js.map",
     "787.1edf3b51.chunk.js.map": "/static/js/787.1edf3b51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3af7c1e6.css",
+    "static/css/main.e1af7605.css",
     "static/js/main.30c48bac.js"
   ]
 }
