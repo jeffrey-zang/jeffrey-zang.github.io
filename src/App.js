@@ -70,6 +70,15 @@ const App = () => {
   return (
     <>
 
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={settings.default}
+      height = '100px'
+      >
+    </Particles>
+
     <div className = 'container'>
       <div className = 'left' style = {{height: '50%'}}>
         
@@ -130,16 +139,6 @@ const App = () => {
 
       </div>
     </div>
-
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={settings.default}
-      style = {{marginTop: '50px', display: 'inline'}}
-      height = '100px'
-      >
-    </Particles>
 
     <div data-aos = 'fade-down' data-aos-duration = "800">
       <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '50px'}}>Portfolio</h1>

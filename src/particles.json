@@ -1,7 +1,7 @@
 {
     "fullScreen": {
       "enable": true,
-      "zIndex": -0.1
+      "zIndex": -999
     },
     "detectRetina": true,
     "fpsLimit": 120,
@@ -18,7 +18,7 @@
         },
         "onHover": {
           "enable": false,
-          "mode": ["repulse", "bubble"],
+          "mode": ["grab", "bubble"],
           "parallax": {
             "enable": true,
             "force": 60,
@@ -93,7 +93,7 @@
       "number": {
         "density": {
           "enable": true,
-          "area": 650
+          "area": 1000
         },
         "limit": 500,
         "value": 20
@@ -129,9 +129,9 @@
         "lineWidth": 0.5
       },
       "move": {
-        "radius": 10
+        "radius": 100
       },
-      "scale": 1,
+      "scale": 2,
       "type": "none",
       "url": ""
     },

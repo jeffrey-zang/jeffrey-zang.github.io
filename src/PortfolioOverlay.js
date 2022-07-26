@@ -21,6 +21,11 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
         }
     }
 
+    let statusicon = 'bi bi-check-circle'
+    if (status !== undefined && status.startsWith('In Progress')) {
+        statusicon = 'bi bi-clock-history'
+    }
+
     return (
     <div id = {title} className = 'portfoliooverlay'>
 
@@ -45,7 +50,7 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
                 {` ${languages} `}
                 <br></br>
                 <h1 style = {{fontSize: '1.6vw', color: statuscolor}}>
-                    <i class = 'bi bi-check-circle' style = {{fontSize: '1.6vw'}}></i>
+                    <i class = {statusicon} style = {{fontSize: '1.6vw'}}></i>
                     {` ${status}`}
                 </h1>
             </div>

@@ -55,6 +55,7 @@ body {
 
 .row {
   margin-left: 2.5%;
+  z-index: 1;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -67,6 +68,7 @@ body {
 .column {
   float: left;
   width: 24%;
+  z-index: 1;
 }
 
 /* Clear floats after rows */
@@ -80,15 +82,12 @@ body {
 /* Content */
 .content {
   background-color: #395B64;
-  color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   transition: opacity 0.2s, transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease;
   -moz-transition: -moz-transform 0.2s ease;
   height: 35vw;
-  backdrop-filter: blur(8px);
-
 }
 
 .content:hover {
@@ -201,6 +200,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -252,6 +252,7 @@ background {
   animation-name: fadedown;
   animation-duration: 2s;
   z-index: 1;
+  border-radius: 0px 0px 40px 0px;
 }
 
 .btn {

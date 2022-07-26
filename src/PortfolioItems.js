@@ -115,7 +115,13 @@ const PortfolioItems = {
   
   The all-in-one productivity discord bot, jam-packed with features (pun intented). Meleti has a study timer, scientifically proven to produce best results, to-do lists to keep track of all your crucial tasks, recurring reminders for wordle fans that want to keep their streak, and much more! Best of all, Meleti features a reward system featuring famous artifacts from history to encourage you to keep studying.
       
-  Works Cited
+Authors
+  Daniel Zhang
+  Li Feng Yin
+  Jashanpreet Singh
+  Jeffrey Zang
+
+Works Cited
       
   Images: https://www.flaticon.com/authors/special/lineal-color?author_id=1
   Discord.js: https://discord.js.org/#/
@@ -174,8 +180,39 @@ const PortfolioItems = {
       description: 'The most realistic mole whacking experience',
       logo: molelogo,
       fontsize: '2.5vw',
+      languages: 'C#',
+      status: 'In Progress, expected September 2022',
+      statuscolor: '#FFFF00',
   
-      overlaydesc: 'lol'
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/whack-a-mole'
+        },
+      },
+  
+      overlaydesc: `Whack A Mole
+
+The most realistic mole whacking experience. My rendition of the classic game Whack A Mole in Unity3D.
+
+Key Features
+- Models made by me
+- Cool animations
+- Scoreboard
+
+How To Use
+  it's not done yet
+
+Credits
+  This software uses the following packages and softwares:
+
+- Blender
+- TextMeshPro
+- Unity3D
+
+no real moles were harmed      
+  `    
     },
   
     galactijump: {
@@ -183,8 +220,24 @@ const PortfolioItems = {
       description: 'Low poly space game about asteroid minerals',
       logo: galactijump,
       fontsize: '2.6vw',
-      
-      overlaydesc: 'lol'
+      languages: 'C#',
+      status: 'In Progress, expected September 2022',
+      statuscolor: '#FFFF00',
+  
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/galactijump'
+        },
+      },
+  
+      overlaydesc: `galactijump
+
+galactijump (no capital) is a low poly space game about harvesting asteroid minerals. It features a physics engine, models created by myself, and animations. The name galactijump was inspired by GalactiGolf, the winning entry of JAMHacks 6.
+
+Created with Unity3D, Blender, TextMeshPro
+  `    
     },
   
     thiswebsite: {
@@ -192,8 +245,42 @@ const PortfolioItems = {
       description: 'The website that you\'re looking at right now',
       logo: logo,
       fontsize: '2.6vw',
+      languages: 'Javascript, HTML/CSS',
+      status: 'Complete, recieving updates',
+      statuscolor: '#a5ff90',
+  
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'
+        },
+        link: {
+          title: 'Link',
+          icon: 'bi bi-link-45deg',
+          link: 'https://jeffrey-zang.github.io/'
+        }
+      },
       
-      overlaydesc: 'lol'
+      overlaydesc: `jeffrey-zang.github.io
+
+About The Project
+  jeffrey-zang.github.io is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. It is what you're looking at right now.
+
+Built With
+- React
+- Particles.js
+- AOS
+- Bootstrap Icons
+
+Roadmap
+- Add About Me
+- Add LinkedIn
+- Ambed Resume
+
+License
+  Distributed under the BSD-# Clause License. See LICENSE.txt for more information.
+`
     },
   
     policepursuit: {
@@ -202,7 +289,40 @@ const PortfolioItems = {
       logo: policecar,
       fontsize: '3vw',
   
-      overlaydesc: 'lol'
+      languages: 'Python',
+      status: 'Complete',
+      statuscolor: '#a5ff90',
+  
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/Police-Pursuit'
+        },
+        link: {
+          title: 'PyWeek Link',
+          icon: 'bi bi-download',
+          link: 'https://pyweek.org/e/nah/'
+        }
+      },
+      
+      overlaydesc: `Police Pursuit
+Entry in PyWeek 31, April 2021
+
+Theme: Cops
+
+Authors: Jeffrey Zang, Daniel Zhang
+
+Dependencies:
+Python 3: http://www.python.org/ 
+PyGame: http://www.pygame.org/
+
+How to Play:
+- Locate the "main.py" file and double click it.
+- Use WASD or arrow keys to control your car
+- Space to pause
+- image credits can be found in the image credits file
+`
     }
   
   }
