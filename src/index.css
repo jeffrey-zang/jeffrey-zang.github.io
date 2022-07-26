@@ -8,10 +8,11 @@
 
 
 body {
-  background: linear-gradient(270deg, #193448 0%, #2C3333 100%);background: linear-gradient(270deg, #173f5e 0%, #2C3333 100%);
+  background: linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%);
   font-family: 'Source Code Pro', monospace;
   margin: 0;
   padding: 0;
+  z-index: 0.1;
 }
 
 @keyframes fadeleft {
@@ -86,6 +87,8 @@ body {
   -webkit-transition: -webkit-transform 0.2s ease;
   -moz-transition: -moz-transform 0.2s ease;
   height: 35vw;
+  backdrop-filter: blur(8px);
+
 }
 
 .content:hover {
@@ -234,6 +237,7 @@ background {
   border-radius: 40px 0px 0px 0px; 
   animation-name: fadeleft;
   animation-duration: 2s;
+  z-index: 1;
 }
 
 .right {
@@ -247,6 +251,7 @@ background {
   border-top: 5px solid #a5ff90; 
   animation-name: fadedown;
   animation-duration: 2s;
+  z-index: 1;
 }
 
 .btn {
@@ -280,6 +285,7 @@ background {
 h1 {
   color: #fff;
   font-size: 32px;
+  z-index: 100;
 }
 
 i {
@@ -306,5 +312,5 @@ footer {
   font-weight: bold;
   font-size: 20px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: -100%;
 }

@@ -1,11 +1,3 @@
-import meletilogo from './logos/meletipfp.png'
-import farmoutlogo from './logos/farmouticon.png'
-import logo from './logos/logo.png'
-import galactijump from './logos/galactijumplogo.png'
-import policecar from './logos/police-car.png'
-import happymathlogo from './logos/happymathlogo.png'
-import simpleread from './logos/simplereadlogo.png'
-import molelogo from './logos/molelogo.png'
 
 import React from 'react'
 import AOS from 'aos'
@@ -13,202 +5,11 @@ import AOS from 'aos'
 import PortfolioItem from './PortfolioItem'
 import PortfolioOverlay from './PortfolioOverlay'
 
-const PortfolioItems = {
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import * as settings from "./particles.json";
 
-  happymath: {
-    title: 'Happy Math Education',
-    description: 'Website for Happy Math Education',
-    logo: happymathlogo,
-    fontsize: '3.2vw',
-
-    languages: 'Javascript, HTML/CSS',
-    status: 'Complete, will recieve updates',
-    statuscolor: '#a5ff90',
-    buttons: {
-      github: {
-        title: 'GitHub',
-        icon: 'bi bi-github',
-        link: 'https://github.com/jeffrey-zang/happy-math-education'
-      },
-      link: {
-        title: 'Link',
-        icon: 'bi bi-link-45deg',
-        link: 'https://jeffrey-zang.github.io/happy-math-education/'
-      },
-    },
-
-    overlaydesc: `Website for Happy Math Education
-    
-Our Mission: To help kids enjoy maths
-
-This website is the new and improved website for Happy Math Education, a tutoring service for math contests. Apart from a completely new user interface, colours, layout, and animations, this new website features many new features. Below is a list of all the changes:
-    
-- New navbar
-- Animations and gradient colour on home page
-- Icons by Bootstrap Icons
-- Improved navigation from "View Policy" and "Back to Top" buttons
-- Timeline and math contests with dropdown for grade
-- Open source, ability to report bugs and request features
-
-Dependencies
-- React
-- Bootstrap Icons
-    
-Authors
-Jeffrey Zang
-    
-Version History
-1.0 Initial Release
-    
-License
-This project is licensed under the BSD-3 Clause License - see the LICENSE file for details
-    
-Previous website: https://www.happymatheducation.com/    `
-  },
-
-  simpleread: {
-    title: 'SimpleRead',
-    description: 'A simple, minimalist book reviewing website',
-    logo: simpleread,
-    fontsize: '3.3vw',    
-    languages: 'Javascript, HTML/CC',
-    status: 'In Progress',
-    statuscolor: '#FFFF00',
-
-    buttons: {
-      github: {
-        title: 'GitHub',
-        icon: 'bi bi-github',
-        link: 'https://github.com/lifeng-yin/simpleread'
-      },
-    },
-
-    overlaydesc: `Farmout
-A simple, minimalist book review website
-`    
-},
-
-  meleti: {
-    title: 'Meleti',
-    description: 'An all-in-one productivity discord bot',
-    logo: meletilogo,
-    fontsize: '',    
-    languages: 'Python',
-    status: 'Complete',
-    statuscolor: '#a5ff90',
-
-    buttons: {
-      github: {
-        title: 'GitHub',
-        icon: 'bi bi-github',
-        link: 'https://github.com/Yourself1011/meleti'
-      },
-      link: {
-        title: 'Discord Invite',
-        icon: 'bi bi-link-45deg',
-        link: 'https://discord.com/invite/wyPGW6Asbx'
-      },
-      devpost: {
-        title: 'Devpost',
-        icon: 'bi bi-people',
-        link: 'https://devpost.com/software/meleti'
-      },
-    },
-
-    overlaydesc: `Daniel Zhang, Li Feng Yin, Jashanpreet Singh, and Jeffrey Zang's submission for Jamhacks 6.
-
-The all-in-one productivity discord bot, jam-packed with features (pun intented). Meleti has a study timer, scientifically proven to produce best results, to-do lists to keep track of all your crucial tasks, recurring reminders for wordle fans that want to keep their streak, and much more! Best of all, Meleti features a reward system featuring famous artifacts from history to encourage you to keep studying.
-    
-Works Cited
-    
-Images: https://www.flaticon.com/authors/special/lineal-color?author_id=1
-Discord.js: https://discord.js.org/#/
-    `
-  },
-  
-  farmout: {
-    title: 'Farmout',
-    description: 'Discord bot about farming crops and animals',
-    logo: farmoutlogo,
-    fontsize: '4.4vw',
-    languages: 'Python',
-    status: 'Complete, 50% working',
-    statuscolor: '#FFFF00',
-
-    buttons: {
-      github: {
-        title: 'GitHub',
-        icon: 'bi bi-github',
-        link: 'https://github.com/Yourself1011/farmoutbot'
-      },
-      link: {
-        title: 'Discord Invite',
-        icon: 'bi bi-link-45deg',
-        link: 'https://discord.com/oauth2/authorize?client_id=834116780502679572&permissions=67628225&scope=bot'
-      },
-      devpost: {
-        title: 'Top.gg',
-        icon: 'bi bi-robot',
-        link: 'https://top.gg/bot/795319933314662452'
-      },
-    },
-
-    overlaydesc: `Farmout
-A currency bot where the player grows crops, takes care of animals, and trades with merchants to gain coins.
-    
-Farmout is a Currency/Fun bot where you own and take care of a farm.
-    
-There are tons of different animals that you can take care of, all giving you unique items like wool and milk. You have to plant and water seeds for crops, which you can sell and trade with the marketplace for other cool items. We’ve only recently added 2 new revolutionary updates: contracts and locations. These make the game feel more realistic, and make it feel like you are actually running a farm.
-    
-Built With
-- Python
-- Discord.py
-- Replit database
-- Uptimerobot
-- Invite Link
-https://discord.com/oauth2/authorize?client_id=834116780502679572&permissions=67628225&scope=bot
-    
-With weekly updates, active devs, and an awesome community, there’s no reason not to try Farmout!
-`    
-  },
-
-  whackamole: {
-    title: 'Whack-A-Mole',
-    description: 'The most realistic mole whacking experience',
-    logo: molelogo,
-    fontsize: '2.5vw',
-
-    overlaydesc: 'lol'
-  },
-
-  galactijump: {
-    title: 'galactijump',
-    description: 'Low poly space game about asteroid minerals',
-    logo: galactijump,
-    fontsize: '2.6vw',
-    
-    overlaydesc: 'lol'
-  },
-
-  thiswebsite: {
-    title: 'This Website',
-    description: 'The website that you\'re looking at right now',
-    logo: logo,
-    fontsize: '2.6vw',
-    
-    overlaydesc: 'lol'
-  },
-
-  policepursuit: {
-    title: 'Police Pursuit',
-    description: 'A simple 2D game about escaping from a police car',
-    logo: policecar,
-    fontsize: '3vw',
-
-    overlaydesc: 'lol'
-  }
-
-}
+import PortfolioItems from './PortfolioItems.js'
 
 let PortfolioItemList = []
 export let PortfolioItemNames = []
@@ -241,6 +42,20 @@ for (let item in PortfolioItems) {
 }
 
 const App = () => {
+
+  const particlesInit = async (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+  
   AOS.init();
 
   window.onscroll = function() {
@@ -267,11 +82,6 @@ const App = () => {
         <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
           <i className = 'bi bi-github'></i> {'GitHub: '}
           <a href = 'https://github.com/jeffrey-zang' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>jeffrey-zang</a>
-        </h1>
-
-        <h1 style = {{fontWeight: 'lighter'}}>
-          <i className = 'bi bi-discord'></i> {'Discord: '}
-          <h1 style = {{fontWeight: 'bold', display: 'inline'}}>Jeff Bozos#4701</h1>
         </h1>
 
         <h1 style = {{fontWeight: 'lighter'}}>
@@ -320,14 +130,24 @@ const App = () => {
 
       </div>
     </div>
-    
-    <div data-aos = "fade-down" data-aos-duration = "800" >
-      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '100px'}}>Portfolio</h1>
+
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={settings.default}
+      style = {{marginTop: '50px', display: 'inline'}}
+      height = '100px'
+      >
+    </Particles>
+
+    <div data-aos = 'fade-down' data-aos-duration = "800">
+      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '50px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
-    
+
     <div data-aos = 'fade-right' data-aos-duration = "800" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
