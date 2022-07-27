@@ -142,9 +142,8 @@ body {
 }
 
 .portfolioheader {
-  font-size: 5vw;
+  font-size: max(4vw, 30px);
   text-align: center;
-  font-size: 5vw;
   margin-top: -40px;
   color: #a5ff90;
 }
@@ -158,7 +157,7 @@ body {
   position: fixed;
   width: 41%;
   height: 75%;
-  font-size: 1.4vw;
+  font-size: max(1.4vw, 15px);
   white-space: pre-wrap;
   overflow: scroll;
   overflow-x: hidden !important;
@@ -190,10 +189,10 @@ body {
     height: 110vw;
   }
   .portfolioheader {
-    font-size: 10vw !important;
+    font-size: 30px !important;
   }
   .portfoliodesc {
-    font-size: 4vw !important;
+    font-size: 3vw !important;
   }
 }
 

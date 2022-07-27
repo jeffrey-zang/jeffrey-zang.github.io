@@ -14,7 +14,7 @@
         "onDiv": {
           "elementId": "repulse-div",
           "enable": true,
-          "mode": "connect"
+          "mode": "repulse"
         },
         "onHover": {
           "enable": false,
@@ -96,7 +96,7 @@
           "area": 1000
         },
         "limit": 500,
-        "value": 20
+        "value": 30
       },
       "opacity": {
         "animation": {
