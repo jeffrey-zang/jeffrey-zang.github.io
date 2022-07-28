@@ -84,7 +84,7 @@ const App = () => {
         
         <i className="bi bi-code" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
         <h1 style = {{marginTop: '-10px'}}>Hello, I'm</h1>
-        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', wordWrap: 'normal'}}>Jeffrey Zang</h1>
+        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(60px, 15vw)', wordWrap: 'normal'}}>Jeffrey Zang</h1>
         <h1 style = {{color: '#193448'}}>05/09/07</h1>
 
         <div style = {{lineHeight: '50px'}}>
@@ -100,7 +100,7 @@ const App = () => {
 
         <h1 style = {{fontWeight: 'lighter'}}>
           <i className = 'bi bi-envelope'></i> {'Email: '}
-          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold', overflow: 'scroll'}}>jeffrey-zang@protonmail.me</a>
+          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold', overflow: 'hidden', whiteSpace: 'break-word !important'}}>jeffrey-zang@protonmail.me</a>
         </h1>
 
         </div>
@@ -111,8 +111,8 @@ const App = () => {
 
       <div className = 'right'>
 
-        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '60px', wordWrap: 'normal'}}>Portfolio</h1>
-        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px'}}>
+        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(60px, 15vw)', wordWrap: 'normal'}}>Portfolio</h1>
+        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px', overflowX: 'hidden !important'}}>
           {'> My projects, creations, and experiences'}
         </h1>
         <button className = 'btn' onClick = {
@@ -141,7 +141,7 @@ const App = () => {
     </div>
 
     <div data-aos = 'fade-down' data-aos-duration = "800">
-      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: '80px', textAlign:'center', marginTop: '50px'}}>Portfolio</h1>
+      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(80px, 10vw)', textAlign:'center', marginTop: '50px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
         A collection of my programming projects, creations, and experiences
       </h1>

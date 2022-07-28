@@ -29,8 +29,8 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
     return (
     <div id = {title} className = 'portfoliooverlay'>
 
-        <div style = {{display: 'flex', justifyContent: 'space-between'}}>
-            <div style = {{width: '40%', overflow: 'none !important'}}>
+        <div className = 'portfoliodiv' style = {{display: 'flex', justifyContent: 'space-between'}}>
+            <div className = 'portfolioheaderdiv' style = {{width: '40%', overflow: 'none !important'}}>
                 <img src = {logo} alt = 'logo' width = '65%' style = {{marginLeft: '17.5%', border: ' 30px solid #395B64', borderRadius: '60px'}}></img>
                 <h1 className = 'portfolioheader' style = {{textAlign: 'center'}}>{title}</h1>
                 <h1 className = 'portfoliodesc' style = {{marginLeft: '5%'}}>

@@ -8,11 +8,19 @@
 
 
 body {
-  background: linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%);
+  background: -moz-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* FF 3.6+ */  
+  background: -ms-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* IE10 */  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */  
+  background: -webkit-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* Safari 5.1+, Chrome 10+ */  
+  background: -o-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* Opera 11.10 */  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */  
+  background: linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* the standard */  
   font-family: 'Source Code Pro', monospace;
   margin: 0;
   padding: 0;
   z-index: 0.1;
+  overflow-x: hidden !important;
 }
 
 @keyframes fadeleft {
@@ -164,6 +172,15 @@ body {
   /* text-overflow: ellipsis; */
 }
 
+.portfoliodiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioheaderdiv {
+  width: 40%;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1000px) {
   .column {
@@ -177,6 +194,19 @@ body {
   }
   .portfoliodesc {
     font-size: 2vw !important;
+  }
+  .portfoliodiv {
+    display: block !important;
+  }
+  .portfoliolongdesc {
+    width: 69%;
+    height: 40%;
+    margin-top: 20px !important;
+    overflow: scroll !important;
+    overflow-x: hidden !important
+  }
+  .portfolioheaderdiv {
+    width: 100% !important;
   }
 }
 
@@ -193,6 +223,12 @@ body {
   }
   .portfoliodesc {
     font-size: 3vw !important;
+  }
+  .portfoliolongdesc {
+    height: 50% !important;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 }
 
@@ -298,6 +334,7 @@ a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
+  word-wrap: break-word;
 }
 
 a:hover {
@@ -314,6 +351,6 @@ footer {
   font-weight: bold;
   font-size: 20px;
   margin-top: 5px;
-  margin-bottom: -100%;
+  margin-bottom: -1000%;
   padding: 10px;
 }
