@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b59d910.css",
+    "main.js": "/static/js/main.95b975f5.js",
+    "static/js/787.1edf3b51.chunk.js": "/static/js/787.1edf3b51.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/molelogo.png": "/static/media/molelogo.35332c56b8af45c078e4.png",
+    "static/media/logo.png": "/static/media/logo.9740255bfe79ada5312c.png",
+    "static/media/meletipfp.png": "/static/media/meletipfp.da7c06a290000cb22bc1.png",
+    "static/media/simplereadlogo.png": "/static/media/simplereadlogo.536db2bcefcbbb78f6c3.png",
+    "static/media/happymathlogo.png": "/static/media/happymathlogo.c708ce25e5cd552eda70.png",
+    "static/media/farmouticon.png": "/static/media/farmouticon.cd7c6f59420f3cbe6722.png",
+    "static/media/police-car.png": "/static/media/police-car.3be1842ae8395712e0ee.png",
+    "static/media/galactijumplogo.png": "/static/media/galactijumplogo.a16f960cb257a6fe88bc.png",
+    "index.html": "/index.html",
+    "main.5b59d910.css.map": "/static/css/main.5b59d910.css.map",
+    "main.95b975f5.js.map": "/static/js/main.95b975f5.js.map",
+    "787.1edf3b51.chunk.js.map": "/static/js/787.1edf3b51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b59d910.css",
+    "static/js/main.95b975f5.js"
+  ]
+}
