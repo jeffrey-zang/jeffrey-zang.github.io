@@ -85,24 +85,27 @@ const App = () => {
         <i className="bi bi-code" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
         <h1 style = {{marginTop: '-10px'}}>Hello, I'm</h1>
         <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(60px, 15vw)', wordWrap: 'normal'}}>Jeffrey Zang</h1>
-        <h1 style = {{color: '#193448'}}>05/09/07</h1>
 
         <div style = {{lineHeight: '50px'}}>
-        <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
-          <i className = 'bi bi-github'></i> {'GitHub: '}
-          <a href = 'https://github.com/jeffrey-zang' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>jeffrey-zang</a>
-        </h1>
+          <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
+            <i className = 'bi bi-github'></i> {'GitHub: '}
+            <a href = 'https://github.com/jeffrey-zang' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>jeffrey-zang</a>
+          </h1>
 
-        <h1 style = {{fontWeight: 'lighter'}}>
-          <i className = 'bi bi-stack-overflow'></i> {'Stack Overflow: '}
-          <a style = {{fontWeight: 'bold'}} href = 'https://stackoverflow.com/users/14683783/larg-ank' rel = 'noreferrer' target = '_blank'>LargAnk</a>
-        </h1>
+          <h1 style = {{fontWeight: 'lighter'}}>
+            <i className = 'bi bi-stack-overflow'></i> {'Stack Overflow: '}
+            <a style = {{fontWeight: 'bold'}} href = 'https://stackoverflow.com/users/14683783/larg-ank' rel = 'noreferrer' target = '_blank'>LargAnk</a>
+          </h1>
 
-        <h1 style = {{fontWeight: 'lighter'}}>
-          <i className = 'bi bi-envelope'></i> {'Email: '}
-          <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold', overflow: 'hidden', whiteSpace: 'break-word !important'}}>jeffrey-zang@protonmail.me</a>
-        </h1>
+          <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
+            <i className = 'bi bi-linkedin'></i> {'LinkedIn: '}
+            <a href = 'https://www.linkedin.com/in/jeffrey-zang-49b872246/' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>Jeffrey Zang</a>
+          </h1>
 
+          <h1 style = {{fontWeight: 'lighter'}}>
+            <i className = 'bi bi-envelope'></i> {'Email: '}
+            <a href = "mailto:jeffrey-zang@proton.me" style = {{fontWeight: 'bold', overflow: 'hidden', whiteSpace: 'break-word !important'}}>jeffrey-zang@protonmail.me</a>
+          </h1>
         </div>
 
         <i className="bi bi-code-slash" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
