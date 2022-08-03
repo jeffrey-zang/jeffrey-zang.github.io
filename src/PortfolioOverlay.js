@@ -43,7 +43,7 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
             </div>
         </div>
 
-        <div style = {{backgroundColor: '#173F5E', borderRadius: '0px 0px 25px 25px', position: 'absolute', left: '0', bottom: '0', fontSize: '1.6vw', color: '#fff', fontWeight: 'bold', width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+        <div style = {{backgroundColor: '#173F5E', borderRadius: '0px 0px 25px 25px', zIndex: '10', position: 'absolute', left: '0', bottom: '0', fontSize: '1.6vw', color: '#fff', fontWeight: 'bold', width: '100%', display: 'flex', justifyContent: 'space-between'}}>
                 
             <div style = {{color: '#a5ff90', marginBottom: '5px', marginLeft: '15px', fontSize: 'max(1.8vw, 15px)'}}>
                 <i class = 'bi bi-code-slash' style = {{fontSize: 'max(1.8vw, 15px)'}}></i>

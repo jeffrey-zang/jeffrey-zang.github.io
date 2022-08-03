@@ -165,7 +165,7 @@ body {
 .portfoliolongdesc {
   position: fixed;
   width: 41%;
-  height: 75%;
+  height: 72vh;
   font-size: max(1.4vw, 15px);
   white-space: pre-wrap;
   overflow: auto;

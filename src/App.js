@@ -54,7 +54,6 @@ const App = () => {
   const particlesLoaded = (container) => {
   };
   
-  AOS.init();
 
   window.onscroll = function() {
     document.getElementById('overlay').style.display = 'none';
@@ -64,6 +63,10 @@ const App = () => {
       }
     }
   }
+
+  AOS.init();
+
+  window.addEventListener('load', AOS.refresh)
   
   return (
     <>
@@ -141,14 +144,14 @@ const App = () => {
       </div>
     </div>
 
-    <div data-aos = 'fade-up' data-aos-duration = "800">
+    <div data-aos = 'zoom-in' data-aos-duration = "2000">
       <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(80px, 10vw)', textAlign:'center', marginTop: '80px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: 'max(2vw, 20px)'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
 
-    <div data-aos = 'fade-right' data-aos-duration = "800" class="row">
+    <div data-aos = 'zoom-in' data-aos-duration = "2000" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>
