@@ -16,7 +16,7 @@ const PortfolioItems = {
       fontsize: '3.2vw',
   
       languages: 'Javascript, HTML/CSS',
-      status: 'Complete, will recieve updates',
+      status: 'Complete',
       statuscolor: '#a5ff90',
       buttons: {
         github: {

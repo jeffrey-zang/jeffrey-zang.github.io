@@ -44,7 +44,6 @@ for (let item in PortfolioItems) {
 const App = () => {
 
   const particlesInit = async (main) => {
-    console.log(main);
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -53,7 +52,6 @@ const App = () => {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
   };
   
   AOS.init();
@@ -76,17 +74,17 @@ const App = () => {
       loaded={particlesLoaded}
       options={settings.default}
       height = '100px'
-      >
-    </Particles>
+    />
 
     <div className = 'container'>
       <div className = 'left' style = {{height: '50%'}}>
         
         <i className="bi bi-code" style = {{color: '#E7F6F2', fontSize: '27px'}}></i>
         <h1 style = {{marginTop: '-10px'}}>Hello, I'm</h1>
-        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(60px, 15vw)', wordWrap: 'normal'}}>Jeffrey Zang</h1>
+        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'max(50px, 5vw)', wordWrap: 'normal'}}>Jeffrey Zang</h1>
 
         <div style = {{lineHeight: '50px'}}>
+
           <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
             <i className = 'bi bi-github'></i> {'GitHub: '}
             <a href = 'https://github.com/jeffrey-zang' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>jeffrey-zang</a>
@@ -97,9 +95,9 @@ const App = () => {
             <a style = {{fontWeight: 'bold'}} href = 'https://stackoverflow.com/users/14683783/larg-ank' rel = 'noreferrer' target = '_blank'>LargAnk</a>
           </h1>
 
-          <h1 style = {{marginTop: '2vw', fontWeight: 300}}>
+          <h1 style = {{fontWeight: 'lighter'}}>
             <i className = 'bi bi-linkedin'></i> {'LinkedIn: '}
-            <a href = 'https://www.linkedin.com/in/jeffrey-zang-49b872246/' rel = 'noreferrer' target = '_blank' style = {{fontWeight: 'bold'}}>Jeffrey Zang</a>
+            <a style = {{fontWeight: 'bold'}} href = 'https://www.linkedin.com/in/jeffrey-zang-49b872246/' rel = 'noreferrer' target = '_blank'>Jeffrey Zang</a>
           </h1>
 
           <h1 style = {{fontWeight: 'lighter'}}>
@@ -128,14 +126,14 @@ const App = () => {
         </button>
         
         <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: '60px', wordWrap: 'normal'}}>Resume</h1>
-        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px', overflow: 'auto'}}>
+        <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px', overflow: 'hidden'}}>
           {'> My achievements, extracurriculars, work and volunteering'}
         </h1>
         <button className = 'btn' onClick = {
           () => {
             window.open('https://docs.google.com/document/d/1b6urcHHJYErsZNCe6qV3wdkqDbrzLin93wucKvwnnzc/view')
           }
-        }>
+        } style = {{overflow: 'hidden'}}>
           <i className="bi bi-briefcase"></i>
           {' View Resume'}
         </button>
@@ -143,9 +141,9 @@ const App = () => {
       </div>
     </div>
 
-    <div data-aos = 'fade-down' data-aos-duration = "800">
-      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(80px, 10vw)', textAlign:'center', marginTop: '50px'}}>Portfolio</h1>
-      <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: '30px'}}>
+    <div data-aos = 'fade-up' data-aos-duration = "800">
+      <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(80px, 10vw)', textAlign:'center', marginTop: '80px'}}>Portfolio</h1>
+      <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: 'max(2vw, 20px)'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>

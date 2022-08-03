@@ -168,7 +168,7 @@ body {
   height: 75%;
   font-size: max(1.4vw, 15px);
   white-space: pre-wrap;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden !important;
   /* text-overflow: ellipsis; */
 }
@@ -180,6 +180,13 @@ body {
 
 .portfolioheaderdiv {
   width: 40%;
+}
+
+.portfoliologo {
+  width: 65%;
+  margin-left: 17.5%;
+  padding: 30px;
+  border-radius: 60px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -194,20 +201,25 @@ body {
     font-size: 4vw !important;
   }
   .portfoliodesc {
-    font-size: 2vw !important;
+    font-size: 2.5vw !important;
   }
   .portfoliodiv {
     display: block !important;
   }
   .portfoliolongdesc {
     width: 69%;
-    height: 40%;
+    height: 35vh;
     margin-top: 20px !important;
+    font-size: 2vw;
     overflow: scroll !important;
     overflow-x: hidden !important
   }
   .portfolioheaderdiv {
     width: 100% !important;
+  }
+  .portfoliologo {
+    width: 40%;
+    margin-left: 30%;
   }
 }
 
@@ -220,13 +232,23 @@ body {
     height: 110vw;
   }
   .portfolioheader {
-    font-size: 30px !important;
+    font-size: 40px !important;
   }
   .portfoliodesc {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
   .portfoliolongdesc {
-    height: 50% !important;
+    height: 40vh !important;
+    width: 78%;
+    font-size: 3vw;
+  }
+  .portfoliooverlay {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+  .portfoliologo {
+    margin-top: -20px !important;
   }
   body {
     overflow-x: hidden !important;
@@ -244,14 +266,14 @@ body {
     display: inline-block;
   }
   .right {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-    width:88% !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    width:88vw !important;
   }
   .left {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-    width: 88% !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    width: 88vw !important;
   }
 }
 
@@ -261,13 +283,14 @@ background {
   top: 0;
   left: 0;
   z-index: 0;
+  width: 100vw;
 }
 
 .left {
-  width: 43%;
+  width: 43vw;
   line-height: 70px;
-  margin-left: 5%;  
-  margin-top: 3%; 
+  margin-left: 5vw;  
+  margin-top: 3vw; 
   padding: 15px 30px; 
   border-radius: 40px 0px 0px 0px; 
   animation-name: fadeleft;
@@ -278,8 +301,8 @@ background {
 }
 
 .right {
-  margin-right: 5%;
-  width: 43%;
+  margin-right: 5vw;
+  width: 43vw;
   line-height: 70px;
   margin-top: 3%; 
   padding: 15px 30px; 
@@ -291,6 +314,15 @@ background {
   border-radius: 0px 0px 40px 0px;
   backdrop-filter: blur(4px);
   background-color: rgba(57, 91, 100, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    margin-left: 0%;
+  }
+  .right {
+    margin-right: 0%;
+  }
 }
 
 .btn {
@@ -350,7 +382,8 @@ footer {
   background-color: #2A3334;
   color: #fff;
   font-weight: bold;
-  font-size: 20px;
+  align-items: center;
+  font-size: max(1.5vw, 15px);
   margin-top: 5px;
   margin-bottom: -1000%;
   padding: 10px;
