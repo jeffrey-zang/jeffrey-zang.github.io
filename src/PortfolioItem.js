@@ -8,7 +8,9 @@ const PortfolioItem = ({title, description, logo, fontsize}) => {
       <div class="content" onMouseDown = {
         () => {
           document.getElementById('overlay').style.display = 'block';
-          document.getElementById(title).style.display = 'block';
+          document.getElementById(title).className = 'portfoliooverlay'
+          document.getElementById(title).style.display = 'block'
+          console.log(document.getElementById(title).className)
         }
       }>
         <img className = 'portfoliologo' src = {logo} alt = 'logo' width = '100%'></img>
@@ -19,7 +21,8 @@ const PortfolioItem = ({title, description, logo, fontsize}) => {
         () => {
           document.getElementById('overlay').style.display = 'none';
           for (let item in PortfolioItemNames) {
-            document.getElementById(PortfolioItemNames[item]).style.display = 'none'
+            document.getElementById(PortfolioItemNames[item]).className = 'test'
+            console.log(document.getElementById(title).className)
           }
         }
       }></div>

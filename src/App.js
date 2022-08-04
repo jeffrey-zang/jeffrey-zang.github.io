@@ -121,7 +121,7 @@ const App = () => {
         </h1>
         <button className = 'btn' onClick = {
           () => {
-            document.getElementById('portfoliotitle').scrollIntoView({ behavior: 'smooth', top: 300})
+            document.getElementById('portfoliotitle').scrollIntoView({ behavior: 'smooth', top: 300, })
           }
         }>
           <i className="bi bi-folder2-open"></i>
