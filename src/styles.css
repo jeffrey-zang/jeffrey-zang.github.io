@@ -9,21 +9,13 @@
 
 body {
   background: -moz-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
-  /* FF 3.6+ */
   background: -ms-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
-  /* IE10 */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff));
-  /* Safari 4+, Chrome 2+ */
   background: -webkit-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
-  /* Safari 5.1+, Chrome 10+ */
   background: -o-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
-  /* Opera 11.10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=transparent);
-  /* IE6 & IE7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=transparent)";
-  /* IE8+ */
   background: linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
-  /* the standard */
   font-family: Source Code Pro, monospace;
   margin: 0;
   padding: 0;
@@ -76,20 +68,17 @@ body {
   z-index: 1;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row>.column {
   padding: 12px;
 }
 
-/* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 24%;
   z-index: 1;
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -97,7 +86,6 @@ body {
   margin-top: -50px;
 }
 
-/* Content */
 .content {
   backdrop-filter: blur(4px);
   background-color: rgba(57, 91, 100, 0.5);
@@ -120,29 +108,22 @@ body {
 
 .overlay {
   position: fixed;
-  /* Sit on top of the page content */
   display: none;
-  /* Hidden by default */
   width: 100%;
-  /* Full width (cover the whole page) */
   height: 100%;
-  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
   z-index: 2;
-  /* Specify a stack order in case youre using a different order for other elements */
   cursor: pointer;
-  /* Add a pointer on hover */
 }
 
 @keyframes portfoliooverlayfadedown {
   from {
     top: -10%;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   to {
@@ -154,11 +135,8 @@ body {
 .portfoliooverlay {
   position: fixed;
   display: none;
-  /* Hidden by default */
   width: 70%;
-  /* Full width (cover the whole page) */
   height: 85%;
-  /* Full height (cover the whole page) */
   top: 7.5%;
   bottom: 7.5%;
   left: 15%;
@@ -241,7 +219,6 @@ body {
   border-radius: 60px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1000px) {
   .column {
     width: 48%;
@@ -268,7 +245,7 @@ body {
     height: 20%;
     display: block;
     text-align: center;
-    padding-top: 10px;
+    align-items: center;
   }
 
   .portfoliolongdesc {
@@ -276,7 +253,6 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 96%;

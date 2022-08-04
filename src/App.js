@@ -115,7 +115,7 @@ const App = () => {
 
       <div className = 'right'>
 
-        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(60px, 15vw)', wordWrap: 'normal'}}>Portfolio</h1>
+        <h1 style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(55px, 14vw)', wordWrap: 'normal'}}>Portfolio</h1>
         <h1 style = {{lineHeight: '40px', marginTop: '20px', fontSize: '30px', overflowX: 'hidden !important'}}>
           {'> My projects, creations, and experiences'}
         </h1>
@@ -144,14 +144,14 @@ const App = () => {
       </div>
     </div>
 
-    <div data-aos = 'zoom-in' data-aos-duration = "2000">
+    <div data-aos = 'fade-down' data-aos-duration = "2000">
       <h1 id = 'portfoliotitle' style = {{color: '#a5ff90', fontWeight: '900', fontSize: 'min(80px, 10vw)', textAlign:'center', marginTop: '80px'}}>Portfolio</h1>
       <h1 style = {{textAlign: 'center', marginTop: '0px', fontSize: 'max(2vw, 20px)'}}>
         A collection of my programming projects, creations, and experiences
       </h1>
     </div>
 
-    <div data-aos = 'zoom-in' data-aos-duration = "2000" class="row">
+    <div data-aos = 'fade-left' data-aos-duration = "2000" class="row">
       {PortfolioItemList}
       {PortfolioOverlayList}
     </div>
