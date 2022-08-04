@@ -55,14 +55,14 @@ const App = () => {
   };
   
 
-  window.onscroll = function() {
-    document.getElementById('overlay').style.display = 'none';
-    for (let item in PortfolioItemNames) {
-      if (item.offsetParent == null) {
-      document.getElementById(PortfolioItemNames[item]).style.display = 'none'
-      }
-    }
-  }
+  // window.onscroll = function() {
+  //   document.getElementById('overlay').style.display = 'none';
+  //   for (let item in PortfolioItemNames) {
+  //     if (item.offsetParent == null) {
+  //     document.getElementById(PortfolioItemNames[item]).style.display = 'none'
+  //     }
+  //   }
+  // }
 
   AOS.init();
 
