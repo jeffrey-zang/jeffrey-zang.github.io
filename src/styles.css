@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap);
 
 * {
   box-sizing: border-box;
@@ -8,15 +8,23 @@
 
 
 body {
-  background: -moz-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* FF 3.6+ */  
-  background: -ms-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* IE10 */  
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */  
-  background: -webkit-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* Safari 5.1+, Chrome 10+ */  
-  background: -o-linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* Opera 11.10 */  
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */  
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */  
-  background: linear-gradient(90deg, rgba(43,51,52,1) 0%, rgba(23,63,94,1) 77%); /* the standard */  
-  font-family: 'Source Code Pro', monospace;
+  background: -moz-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
+  /* FF 3.6+ */
+  background: -ms-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
+  /* IE10 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff));
+  /* Safari 4+, Chrome 2+ */
+  background: -webkit-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -o-linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
+  /* Opera 11.10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=transparent);
+  /* IE6 & IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=transparent)";
+  /* IE8+ */
+  background: linear-gradient(90deg, rgba(43, 51, 52, 1) 0%, rgba(23, 63, 94, 1) 77%);
+  /* the standard */
+  font-family: Source Code Pro, monospace;
   margin: 0;
   padding: 0;
   z-index: 0.1;
@@ -28,6 +36,7 @@ body {
     margin-left: 0;
     opacity: 0%;
   }
+
   to {
     margin-left: 5%;
     opacity: 100%;
@@ -39,6 +48,7 @@ body {
     margin-top: 0;
     opacity: 0%;
   }
+
   to {
     margin-top: 3%;
     opacity: 100%;
@@ -52,13 +62,13 @@ body {
 ::-webkit-scrollbar-track {
   background: #173F5E;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #A5FF90; 
+  background: #A5FF90;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #76b966; 
+  background: #76b966;
 }
 
 .row {
@@ -68,7 +78,7 @@ body {
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row>.column {
   padding: 12px;
 }
 
@@ -109,17 +119,24 @@ body {
 }
 
 .overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case youre using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 
 @keyframes portfoliooverlayfadedown {
@@ -127,6 +144,7 @@ body {
     top: -10%;
     opacity: 0.7;
   }
+
   to {
     top: 7.5%;
     opacity: 1;
@@ -135,17 +153,20 @@ body {
 
 .portfoliooverlay {
   position: fixed;
-  display: none; /* Hidden by default */
-  width: 70%; /* Full width (cover the whole page) */
-  height: 85%; /* Full height (cover the whole page) */
+  display: none;
+  /* Hidden by default */
+  width: 70%;
+  /* Full width (cover the whole page) */
+  height: 85%;
+  /* Full height (cover the whole page) */
   top: 7.5%;
   bottom: 7.5%;
   left: 15%;
   right: 15%;
-  background-color:#395B64; 
+  background-color: #395B64;
   z-index: 999;
   padding: 10px 10px 10px 10px;
-  border-radius: 25px;
+  border-radius: 25px 0px;
   animation-name: portfoliooverlayfadedown;
   animation-duration: 0.5s;
 }
@@ -163,14 +184,45 @@ body {
 }
 
 .portfoliolongdesc {
-  position: fixed;
-  width: 41%;
-  height: 72vh;
+  position: absolute;
+  width: 99%;
+  height: 80%;
+  right: 0;
+  top: 8%;
   font-size: max(1.4vw, 15px);
   white-space: pre-wrap;
   overflow: auto;
   overflow-x: hidden !important;
-  /* text-overflow: ellipsis; */
+}
+
+.portfoliobefore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #173F5E;
+  z-index: 10;
+  font-size: 1.6vw;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  height: 8%;
+  align-items: center;
+}
+
+.portfolioafter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #173F5E;
+  z-index: 10;
+  font-size: max(1.6vw, 20px);
+  font-weight: bold;
+  width: 100%;
+  height: 12%;
+  align-items: center;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
 }
 
 .portfoliodiv {
@@ -183,8 +235,8 @@ body {
 }
 
 .portfoliologo {
-  width: 65%;
-  margin-left: 17.5%;
+  width: 90%;
+  margin-left: 5%;
   padding: 30px;
   border-radius: 60px;
 }
@@ -194,32 +246,33 @@ body {
   .column {
     width: 48%;
   }
+
   .content {
-    height: 70vw;
+    height: 50vw;
   }
+
   .portfolioheader {
     font-size: 4vw !important;
   }
+
   .portfoliodesc {
     font-size: 2.5vw !important;
   }
-  .portfoliodiv {
-    display: block !important;
-  }
-  .portfoliolongdesc {
-    width: 69%;
-    height: 35vh;
-    margin-top: 20px !important;
-    font-size: 2vw;
-    overflow: scroll !important;
-    overflow-x: hidden !important
-  }
-  .portfolioheaderdiv {
-    width: 100% !important;
-  }
+
   .portfoliologo {
-    width: 40%;
-    margin-left: 30%;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .portfolioafter {
+    height: 20%;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .portfoliolongdesc {
+    height: 71.9%
   }
 }
 
@@ -228,30 +281,17 @@ body {
   .column {
     width: 96%;
   }
+
   .content {
-    height: 110vw;
+    height: 90vw;
   }
+
   .portfolioheader {
     font-size: 40px !important;
   }
+
   .portfoliodesc {
     font-size: 4vw !important;
-  }
-  .portfoliolongdesc {
-    height: 40vh !important;
-    width: 78%;
-    font-size: 3vw;
-  }
-  .portfoliooverlay {
-    width: 80%;
-    left: 10%;
-    right: 10%;
-  }
-  .portfoliologo {
-    margin-top: -20px !important;
-  }
-  body {
-    overflow-x: hidden !important;
   }
 }
 
@@ -265,11 +305,13 @@ body {
   .container {
     display: inline-block;
   }
+
   .right {
     margin-left: 5vw !important;
     margin-right: 5vw !important;
-    width:88vw !important;
+    width: 88vw !important;
   }
+
   .left {
     margin-left: 5vw !important;
     margin-right: 5vw !important;
@@ -289,10 +331,10 @@ background {
 .left {
   width: 43vw;
   line-height: 70px;
-  margin-left: 5vw;  
-  margin-top: 3vw; 
-  padding: 15px 30px; 
-  border-radius: 40px 0px 0px 0px; 
+  margin-left: 5vw;
+  margin-top: 3vw;
+  padding: 15px 30px;
+  border-radius: 40px 0px 0px 0px;
   animation-name: fadeleft;
   animation-duration: 2s;
   z-index: 1;
@@ -304,10 +346,10 @@ background {
   margin-right: 5vw;
   width: 43vw;
   line-height: 70px;
-  margin-top: 3%; 
-  padding: 15px 30px; 
+  margin-top: 3%;
+  padding: 15px 30px;
   border-width: 3px;
-  border-top: 5px solid #a5ff90; 
+  border-top: 5px solid #a5ff90;
   animation-name: fadedown;
   animation-duration: 2s;
   z-index: 1;
@@ -320,13 +362,14 @@ background {
   .left {
     margin-left: 0%;
   }
+
   .right {
     margin-right: 0%;
   }
 }
 
 .btn {
-  font-family: 'Source Code Pro', monospace;
+  font-family: Source Code Pro, monospace;
   font-weight: bold;
   background-color: transparent;
   border-radius: 3px;
@@ -336,15 +379,15 @@ background {
   margin-top: 25px;
   padding: 0.3vw 0.6vw;
   font-size: 32px;
-  transition: background-color 0.3s, color 0.2s; 
+  transition: background-color 0.3s, color 0.2s;
   -webkit-user-select: none;
-  -moz-user-select: none; 
-  -ms-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
 .btn:hover {
-  color: #395B64; 
+  color: #395B64;
   background-color: #A5FF90;
 }
 
@@ -357,10 +400,6 @@ h1 {
   color: #fff;
   font-size: 32px;
   z-index: 100;
-}
-
-i {
-  font-size: 32px;
 }
 
 a {

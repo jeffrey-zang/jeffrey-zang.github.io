@@ -11,7 +11,7 @@ const PortfolioItem = ({title, description, logo, fontsize}) => {
           document.getElementById(title).style.display = 'block';
         }
       }>
-        <img src = {logo} alt = 'logo' width = '100%' style = {{padding: '30px', borderRadius: '60px'}}></img>
+        <img className = 'portfoliologo' src = {logo} alt = 'logo' width = '100%'></img>
         <h1 className = 'portfolioheader' style = {{fontSize: fontsize, marginTop: '-21px'}}>{title}</h1>
         <h1 className = 'portfoliodesc' >{description}</h1>
       </div>
