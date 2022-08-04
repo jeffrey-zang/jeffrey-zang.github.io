@@ -160,14 +160,27 @@ const App = () => {
       <p style = {{marginLeft: '5px'}}>
         Copyright © 2022: Jeffrey Zang
       </p>
-      <p style = {{cursor: 'pointer'}} onClick = {
-        () => {
-          window.open('https://github.com/jeffrey-zang/jeffrey-zang.github.io')
-        }
-      }>
-        {'Source '}
-        <i class = 'bi bi-github' style = {{fontSize: '20px'}}></i>
+
+      <p>
+        <p style = {{marginLeft: '5px', display: 'inline'}}>
+          <a target = '_blank' rel = 'noreferrer' href = 'https://github.com/jeffrey-zang/jeffrey-zang.github.io/releases/tag/v2.0'>
+            Version: 2.0
+          </a>
+        </p>
+        {'  |  '}
+        <a target = '_blank' rel = 'noreferrer' href = 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'>
+          <i class = 'bi bi-github' style = {{fontSize: 'max(1.5vw, 15px)'}}></i>
+        </a>
+        {' '}
+        <a target = '_blank' rel = 'noreferrer' href = 'https://www.linkedin.com/in/jeffrey-zang-49b872246/'>
+          <i class = 'bi bi-linkedin' style = {{fontSize: 'max(1.5vw, 15px)'}}></i>
+        </a>
+        {' '}
+        <a target = '_blank' rel = 'noreferrer' href = 'https://stackoverflow.com/users/14683783/larg-ank'>
+          <i class = 'bi bi-stack-overflow' style = {{fontSize: 'max(1.5vw, 15px)'}}></i>
+        </a>
       </p>
+      
     </footer>
 
     </>
