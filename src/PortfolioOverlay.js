@@ -1,4 +1,5 @@
 import React from 'react'
+import { PortfolioItemNames } from './App';
 
 const PortfolioOverlay = ({title, logo, description, longdesc, languages, status, statuscolor, buttons}) => {
 
@@ -30,7 +31,17 @@ const PortfolioOverlay = ({title, logo, description, longdesc, languages, status
     <div id = {title} className = 'portfoliooverlay'>
 
         <div className = 'portfoliobefore'>
-            <h1 style = {{textAlign: 'center', fontSize: 'max(2.5vw, 15px)'}}>{title}</h1>
+            <h1 style = {{fontSize: 'max(2.5vw, 20px)'}}>{title}</h1>
+            <i class="bi bi-x" style = {{color: '#fff', cursor: 'pointer', fontSize: 'max(2.5vw, 20px)'}} onClick ={
+                () => {
+                    document.getElementById('overlay').style.display = 'none';
+                    for (let item in PortfolioItemNames) {
+                        document.getElementById(PortfolioItemNames[item]).className = 'portfoliohidden'
+                        console.log(document.getElementById(title).className)
+                    }
+                }
+                  
+            }></i>
         </div>
 
         <h1 className = 'portfoliolongdesc' style = {{overflow: 'scroll'}}>{longdesc}</h1>

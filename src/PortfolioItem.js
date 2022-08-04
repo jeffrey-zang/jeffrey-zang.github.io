@@ -14,14 +14,16 @@ const PortfolioItem = ({title, description, logo, fontsize}) => {
         }
       }>
         <img className = 'portfoliologo' src = {logo} alt = 'logo' width = '100%'></img>
-        <h1 className = 'portfolioheader' style = {{fontSize: fontsize, marginTop: '-21px'}}>{title}</h1>
+        <h1 className = 'portfolioheader' style = {{fontSize: fontsize, marginTop: '-21px'}}>
+          {title}
+        </h1>
         <h1 className = 'portfoliodesc' >{description}</h1>
       </div>
       <div id = 'overlay' className='overlay' onClick = {
         () => {
           document.getElementById('overlay').style.display = 'none';
           for (let item in PortfolioItemNames) {
-            document.getElementById(PortfolioItemNames[item]).className = 'test'
+            document.getElementById(PortfolioItemNames[item]).className = 'portfoliohidden'
             console.log(document.getElementById(title).className)
           }
         }
