@@ -3,7 +3,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-jeffrey-zang.github.io is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. 
+[jeffrey-zang.github.io](https://jeffrey-zang.github.io/) is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. 
 
 
 ## Built With
@@ -24,13 +24,11 @@ jeffrey-zang.github.io is my personal website. It contains my portfolio of probj
 
 ## License
 
-Distributed under the BSD-# Clause License. See `LICENSE.txt` for more information.
+Distributed under the BSD-3 Clause License. See `LICENSE.txt` for more information.
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [React](https://reactjs.org/)
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
