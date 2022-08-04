@@ -1,7 +1,7 @@
 import React from 'react'
 import { PortfolioItemNames } from './App';
 
-const PortfolioOverlay = ({title, logo, description, longdesc, languages, status, statuscolor, buttons}) => {
+const PortfolioOverlay = ({title, longdesc, languages, status, statuscolor, buttons}) => {
 
     let buttonlist = []
     for (let item in buttons) {
