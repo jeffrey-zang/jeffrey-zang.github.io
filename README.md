@@ -6,6 +6,10 @@
 [jeffrey-zang.github.io](https://jeffrey-zang.github.io/) is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. 
 
 
+## Contributing
+Contributions are highly welcome. You can add new features, fix bugs, and change spelling mistakes. To contribute, create a fork of the repository, write some code, and open a pull request.
+
+
 ## Built With
 - React
 - Particles.js
