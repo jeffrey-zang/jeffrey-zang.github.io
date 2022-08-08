@@ -106,6 +106,12 @@ body {
   transform: rotateY(180deg);
 }
 
+@media screen and (max-width: 800px) {
+  .content:active {
+    transform: scale(1.05);
+  }
+}
+
 .overlay {
   position: fixed;
   display: none;
@@ -285,6 +291,7 @@ body {
     height: 20%;
     display: block;
     text-align: center;
+    line-height: 20px;
     align-items: center;
   }
 

@@ -45,24 +45,12 @@ const App = () => {
 
   const particlesInit = async (main) => {
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
   const particlesLoaded = (container) => {
   };
   
-
-  // window.onscroll = function() {
-  //   document.getElementById('overlay').style.display = 'none';
-  //   for (let item in PortfolioItemNames) {
-  //     if (item.offsetParent == null) {
-  //     document.getElementById(PortfolioItemNames[item]).style.display = 'none'
-  //     }
-  //   }
-  // }
 
   AOS.init();
 
