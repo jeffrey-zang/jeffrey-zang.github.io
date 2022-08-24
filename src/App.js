@@ -122,7 +122,7 @@ const App = () => {
         </h1>
         <button className = 'btn' onClick = {
           () => {
-            window.open('https://docs.google.com/document/d/1b6urcHHJYErsZNCe6qV3wdkqDbrzLin93wucKvwnnzc/view')
+            window.open('https://drive.google.com/file/d/10d9PgRgAOykx7P-FCooYyVm-TzTlnefX/view')
           }
         } style = {{overflow: 'hidden'}}>
           <i className="bi bi-briefcase"></i>
