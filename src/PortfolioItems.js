@@ -6,28 +6,83 @@ import policecar from './logos/police-car.png'
 import happymathlogo from './logos/happymathlogo.png'
 import simpleread from './logos/simplereadlogo.png'
 import molelogo from './logos/molelogo.png'
+import clockhacks from './logos/clockhacks.png'
+import recipelogo from './logos/recipe.png'
 
 const PortfolioItems = {
 
+  clock: {
+    title: 'ClockHacks',
+    description: 'A hackathon for time',
+    logo: clockhacks,
+    fontsize: '3.2vw',
+
+    languages: 'React, JavaScript, Tailwind',
+    status: 'Complete',
+    statuscolor: '#a5ff90',
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/ClockHacks/clockhacks.ca'
+      },
+      link: {
+        title: 'Link',
+        icon: 'bi bi-link-45deg',
+        link: 'https://clockhacks.ca'
+      },
+    },
+
+    overlaydesc: `ClockHacks Website
+The website for Clockhacks, a hackathon by students for students https://clockhacks.ca/
+
+Info
+Event Date: Nov 4, 2022 to Nov 6, 2022
+Free: Yes
+Students: Yes, high school
+Location: Online
+Duration: 40 hours
+Language: English
+
+By students, for students
+ClockHacks is a hackathon created by a group of high school students from Waterloo, Ontario.
+
+Our mission is to make hackathons accessible and fun for high school students around the world. Themed around time, Clockhacks will take place online on DATE.
+
+You will be able to work in teams of up to 4 to create a website, game, app, robot, or whatever tech-related product you want. Participate in activites, speeches, workshops, and events to learn more about the world of tech. At the end of the event, pitch your project to a panel of judges and compete for prizes.
+
+Join hackers from across North America this November for a weekend of fun and innovation at ClockHacks!
+
+Dependencies
+React
+Sass
+Material Icons
+Tailwind
+AOS
+Bootstrap Icons
+Graphics by https://undraw.co/illustrations
+Logo and banner by https://www.linkedin.com/in/cera-wang-171699240/`
+  },
+
     happymath: {
       title: 'Happy Math Education',
-      description: 'Website for Happy Math Education',
+      description: 'A tutoring service for math contests',
       logo: happymathlogo,
       fontsize: '3.2vw',
   
-      languages: 'Javascript, HTML/CSS',
+      languages: 'React, JavaScript, SASS',
       status: 'Complete',
       statuscolor: '#a5ff90',
       buttons: {
         github: {
           title: 'GitHub',
           icon: 'bi bi-github',
-          link: 'https://github.com/jeffrey-zang/happy-math-education'
+          link: 'https://github.com/happymatheducation/happymatheducation.com'
         },
         link: {
           title: 'Link',
           icon: 'bi bi-link-45deg',
-          link: 'https://jeffrey-zang.github.io/happy-math-education/'
+          link: 'https://happymatheducation.com//'
         },
       },
   
@@ -55,10 +110,52 @@ const PortfolioItems = {
   1.0 Initial Release
       
   License
-  This project is licensed under the BSD-3 Clause License - see the LICENSE file for details
-      
-  Previous website: https://www.happymatheducation.com/    `
+  This project is licensed under the BSD-3 Clause License - see the LICENSE file for details`
     },
+
+    recipe: {
+      title: 'MyRecipePal',
+      description: 'Unlock your inner chef skills',
+      logo: recipelogo,
+      fontsize: '3vw',    
+      languages: 'React, JavaScript, ChakraUi, CockroachDB',
+      status: 'In Progress',
+      statuscolor: '#FFFF00',
+  
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/MyRecipePal'
+        },
+        link: {
+          title: 'Link',
+          icon: 'bi bi-link',
+          link: 'https://my-recipe-pal.github.io/'
+        },
+      },
+  
+      overlaydesc: `Submission for Hack the North 2022
+
+📝About
+As university students, we all understand that one of the biggest struggles of living by yourself is cooking food. We wanted to make it easy to find and craft new recipes, while still eating healthy.
+
+🛠️ Built With
+We used React, JavaScript, ChakraUI, and Bootstrap for the frontend. For the backend. we used CockroachDB and Express.
+
+⚙️ Usage
+We didn't have time to host the backend, so the database won't work for regular users. If you host it locally, you are able to create recipes, search for recipes, and view recipes.
+
+⛰️ Challenges
+Before hacking started, one of our teammates felt sick and had to go home. Without him, a lot of our planning and ideas had to be delayed and reinvisioned. He was a big part of keeping our team together and energized throughout the night, so we were all discouraged from him leaving.
+Instead of giving up, we took the loss of a teammate with even more determination to win. We utilized our resources, such as discord for communication, to help us continue moving forward with our project. As a result, we still managed to go beyond our expectations and make considerable progress on our project.
+
+🛣️ Roadmap
+In the future, we hope to add:
+Accounts/login system
+Forums for people to talk about recipes and health
+A tracker that keeps track of your meals, calorie intake, etc`    
+  },
   
     simpleread: {
       title: 'SimpleRead',
