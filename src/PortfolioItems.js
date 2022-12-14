@@ -11,6 +11,41 @@ import recipelogo from './logos/recipe.png'
 
 const PortfolioItems = {
 
+  rythmhacks: {
+    title: 'RythmHacks',
+    description: 'Experience the magic of tech',
+    logo: 'https://links-rythmhacks-ca.vercel.app/assets/logosmall-29cd5f72.png',
+    fontsize: '3.2vw',
+
+    languages: 'React, JavaScript, Tailwind',
+    status: 'Complete',
+    statuscolor: '#a5ff90',
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/RythmHacks/rythmhacks.ca'
+      },
+      link: {
+        title: 'Link',
+        icon: 'bi bi-link-45deg',
+        link: 'https://rythmhacks.ca'
+      },
+    },
+
+    overlaydesc: `RythmHacks
+
+    In August of 2023, we're going in person at the University of Waterloo! Join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
+    
+    Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
+    
+    A place for everyone
+    Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
+    
+    We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
+`
+  },
+
   clock: {
     title: 'ClockHacks',
     description: 'A hackathon for time',
@@ -180,6 +215,49 @@ A tracker that keeps track of your meals, calorie intake, etc`
   Authors: Li Feng Yin, Daniel Zhang, Jeffrey Zang
   `    
   },
+
+  thiswebsite: {
+    title: 'This Website',
+    description: 'The website that you\'re looking at right now',
+    logo: logo,
+    fontsize: '2.6vw',
+    languages: 'Javascript, HTML/CSS',
+    status: 'Complete, recieving updates',
+    statuscolor: '#a5ff90',
+
+    buttons: {
+      github: {
+        title: 'GitHub',
+        icon: 'bi bi-github',
+        link: 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'
+      },
+      link: {
+        title: 'Link',
+        icon: 'bi bi-link-45deg',
+        link: 'https://jeffrey-zang.github.io/'
+      }
+    },
+    
+    overlaydesc: `jeffrey-zang.github.io
+
+About The Project
+jeffrey-zang.github.io is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. It is what you're looking at right now.
+
+Built With
+- React
+- Particles.js
+- AOS
+- Bootstrap Icons
+
+Roadmap
+- Add About Me
+- Add LinkedIn
+- Ambed Resume
+
+License
+Distributed under the BSD-# Clause License. See LICENSE.txt for more information.
+`
+  },
   
     meleti: {
       title: 'Meleti',
@@ -335,49 +413,6 @@ galactijump (no capital) is a low poly space game about harvesting asteroid mine
 
 Created with Unity3D, Blender, TextMeshPro
   `    
-    },
-  
-    thiswebsite: {
-      title: 'This Website',
-      description: 'The website that you\'re looking at right now',
-      logo: logo,
-      fontsize: '2.6vw',
-      languages: 'Javascript, HTML/CSS',
-      status: 'Complete, recieving updates',
-      statuscolor: '#a5ff90',
-  
-      buttons: {
-        github: {
-          title: 'GitHub',
-          icon: 'bi bi-github',
-          link: 'https://github.com/jeffrey-zang/jeffrey-zang.github.io'
-        },
-        link: {
-          title: 'Link',
-          icon: 'bi bi-link-45deg',
-          link: 'https://jeffrey-zang.github.io/'
-        }
-      },
-      
-      overlaydesc: `jeffrey-zang.github.io
-
-About The Project
-  jeffrey-zang.github.io is my personal website. It contains my portfolio of probjects, links to my resume, and ways to contact me. It is what you're looking at right now.
-
-Built With
-- React
-- Particles.js
-- AOS
-- Bootstrap Icons
-
-Roadmap
-- Add About Me
-- Add LinkedIn
-- Ambed Resume
-
-License
-  Distributed under the BSD-# Clause License. See LICENSE.txt for more information.
-`
     },
   
     policepursuit: {
