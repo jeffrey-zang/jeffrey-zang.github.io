@@ -8,6 +8,7 @@ import simpleread from './logos/simplereadlogo.png'
 import molelogo from './logos/molelogo.png'
 import clockhacks from './logos/clockhacks.png'
 import recipelogo from './logos/recipe.png'
+import cultivatelogo from './logos/cultivate.png'
 
 const PortfolioItems = {
 
@@ -147,6 +148,105 @@ Logo and banner by https://www.linkedin.com/in/cera-wang-171699240/`
   License
   This project is licensed under the BSD-3 Clause License - see the LICENSE file for details`
     },
+
+    charitychimp: {
+      title: 'CharityChimp',
+      description: 'Helping you help others through charities',
+      logo: 'https://charitychimp.netlify.app/static/media/logo.a5eb05bfadf12f0221f8.png',
+      fontsize: '2.8vw',
+  
+      languages: 'React, TypeScript, Sass, Deso.js',
+      status: 'Complete',
+      statuscolor: '#a5ff90',
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/jeffrey-zang/charitychimp'
+        },
+        link: {
+          title: 'Link',
+          icon: 'bi bi-link-45deg',
+          link: 'https://charitychimp.netlify.app/'
+        },
+      },
+  
+      overlaydesc: `🐵 CharityChimp
+💡 Inspiration
+In the spirit of Thanksgiving, I wanted to Give Back to the world by donating to a charity. But as I was browsing the internet, trying to find the perfect cause to support, I found it difficult to put my finger on one. I didn't know which ones were 501(c) nonprofits, who they supported, or if they were financially transparent. This is why we made CharityChimp.
+
+🧠 How we help
+CharityChimp is a full-stack web application that makes it easy to find verified charities to donate to. Powered by the Deso blockchain, we allow users to make posts about their favourite charities, as well as browse the charities with a search system and tags. CharityChimp makes it much easier to find safe and reliable charity organizations to give back to.
+
+⚙️ How it works
+Through the Deso blockchain, users will sign in using their Deso public key. Then, they can make posts about their favourite charities. They can add tags to their posts to make it easier to find for users. Additionally, they're able to see the monetary goals for these charities to better visualize their impact.
+
+💻 Demo + Explanation
+It's Thanksgiving! Bob wants to donate to a charity, but he doesn't know which one. So, he goes on CharityChimp. First he uses the tags animal and environment because he knows he wants to help them. Boom! The World Wildlife Fund is perfect. Afterwards, he wants to post about his local charity, the Humane Society. He creates a Deso account, logs in, and creates a post about it.
+
+😩 Challenges we ran into
+We found it very challenging to deal with the Deso API. The one provided by MLH, deso-protocol, didn't work (lol). We had to switch to a new, unfinished API called deso.js. This created many conflicts in our work and forced us to restart many times.
+
+🙏 Why we help
+As hackers and tech enthusiasts, we wanted to find a way to give back to the world through programming and technology. We work to find solutions to problems through tech. Even if we can't donate to charities monetarily, we wanted to help them in a different way by using our programming skills. We believe that everyone deserves a Thanksgiving they can enjoy, and we hope that CharityChimp will help someone accomplish that.
+
+💭 What's next for CharityChimp
+We hope to implement transactions through the Deso API, so that people can donate to charities using $DESO straight from our website. We want to add "more info" pop-ups for the charities, so you can get a better sense of their goals and ideas. Lastly, we hope that CharityChimp will be used around the world one day, making charities around the world feel more connected.
+
+👓 How it ACTUALLY works (for the nerds)
+When you click on CharityChimp, React, React Icons, TypeScript, and SASS render a website using HTML, CSS, and Javascript. React-router-dom helps in browsing the pages. When you log in, we make an API request to the backend through express.js, Node.js, and TypeScript. Then, deso.js interacts with the Deso API and to return some user info, allowing you to log into your account. When you create a post, it gets added to our list of posts and gets indexed by the search engine.
+`      
+    },
+
+    cultivate: {
+      title: 'Cultivate',
+      description: 'A home for urban farmers',
+      logo: cultivatelogo,
+      fontsize: '3.2vw',
+  
+      languages: 'React, JavaScript, Sass',
+      status: 'Complete',
+      statuscolor: '#a5ff90',
+      buttons: {
+        github: {
+          title: 'GitHub',
+          icon: 'bi bi-github',
+          link: 'https://github.com/lifeng-yin/cultivate'
+        },
+        link: {
+          title: 'Link',
+          icon: 'bi bi-link-45deg',
+          link: 'https://cultivating.netlify.app/'
+        },
+      },
+  
+      overlaydesc: `Cultivate
+🧑‍🌾 What is urban farming
+Urban farming is the act of farming, usually crops, in an urban setting. This means that there is limited space, resources, and materials for these farmers, who just want to provide for their family and community. As climate change worsens and gas prices increase, urban farmers are becoming increasingly important in the development of sustainable cities.
+
+⚡ Inspiration
+One of the toughest jobs in our current economy is the urban farmer. They have to compete with rural farmers, who often have large amounts of land, advanced machinery, and consistent buyers. This makes it almost impossible to support one's family with only profit from urban farming. This is why we created Cultivate. Cultivate gives urban farmers a platform to post their crops and harvests, and for buyers to browse and purchase home-grown produce.
+
+🌍 The impact of buying produce through Urban Farming
+Many large-scale, rural farms across the globe use inhumane farming techniques, pesticides, non-vegan products, and unenvironmentally friendly methods of transport. When you buy locally grown, the food only needs to travel a short distance to get to your doorstep, as opposed to across the world. You can ensure that you'll be buying pesticide-free, vegan products that were grown by one of your neighbours. Additionally, you will boost your local economy and give back to others in your community, possibly allowing them to pursue passions that they couldn't before.
+
+💪 What it does
+Cultivate gives a welcoming, feels-like-home platform for urban farmers to post about their crops. For example, Farmer Jeff posts about his newly grown potatoes, which he's listing for $10 on Cultivate. Daniel, wanting to eat a nice potato dinner with his family, contacts Farmer Jeff through Cultivate and purchases the product. Just like websites like Kijiji, the actual exchange of the item is up to the buyer and seller. Cultivate allows urban farmers to gain a sustainable income through posting their harvests on the website. It slows climate change
+
+🧠 How we built it
+We used React, JavaScript, and SASS to create Cultivate. We hosted it with Netlify here
+
+❓ Challenges we ran into
+Originally, we were planning on using Appwrite for the backend. We found it quite difficult to connect it and make API requests. Additionally, we were unable to start up Docker and create an Appwrite project. We hope to see some clearer instructions on using Appwrite in a hackathon project in the future.
+
+🌾 What's next for Cultivate
+We hope that Cultivate will be launched into the nationwide ecosystem of urban farmers. Our goal is to impact the lives of some of these hardworking individuals positively. Maybe one day, global issues like population growth and climate change will be fought against through urban farming and Cultivate.
+
+🎬 Video Credits
+Epic Cinematic Adventure Music | ICELAND by Alex-Productions | https://onsound.eu/ Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License https://creativecommons.org/licenses/by/3.0/deed.en_US
+`
+    },
+  
 
     recipe: {
       title: 'MyRecipePal',

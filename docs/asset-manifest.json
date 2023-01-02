@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31882e63.css",
-    "main.js": "/static/js/main.71ff556b.js",
+    "main.js": "/static/js/main.946ad54b.js",
     "static/js/787.1edf3b51.chunk.js": "/static/js/787.1edf3b51.chunk.js",
     "static/media/clockhacks.png": "/static/media/clockhacks.f66374254527309453c1.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
@@ -15,13 +15,14 @@
     "static/media/recipe.png": "/static/media/recipe.d23b276398a64a49bee6.png",
     "static/media/happymathlogo.png": "/static/media/happymathlogo.120c3709ad2d1fb710b6.png",
     "static/media/galactijumplogo.png": "/static/media/galactijumplogo.a16f960cb257a6fe88bc.png",
+    "static/media/cultivate.png": "/static/media/cultivate.6910778d7fbdf801dde9.png",
     "index.html": "/index.html",
     "main.31882e63.css.map": "/static/css/main.31882e63.css.map",
-    "main.71ff556b.js.map": "/static/js/main.71ff556b.js.map",
+    "main.946ad54b.js.map": "/static/js/main.946ad54b.js.map",
     "787.1edf3b51.chunk.js.map": "/static/js/787.1edf3b51.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31882e63.css",
-    "static/js/main.71ff556b.js"
+    "static/js/main.946ad54b.js"
   ]
 }
