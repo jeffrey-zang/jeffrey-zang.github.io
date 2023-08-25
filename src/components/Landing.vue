@@ -1,5 +1,5 @@
 <template>
-  <h1>amongus</h1>
+  <div className="grid">amongus</div>
 </template>
 
 <script>

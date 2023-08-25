@@ -10,10 +10,7 @@ export default {
 </script>
 
 <template>
-  <div>
-    among
-    <Landing/>
-  </div>
+  <Landing/>
 </template>
 
 <style scoped>
